@@ -1,0 +1,158 @@
+.cryptoBox{
+    width: 100%;
+    height: auto;
+    padding: 40px;
+    display: flex;
+    justify-content: center;
+}
+.cryptoSec1{
+    width: 80%;
+}
+
+.cryptoHeadSec{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cryptoHeadSec h1, h3{
+    width: 50%;
+    font-weight: 400;
+    color: black;
+
+
+}
+.cryptoHeadSec h1{
+    font-size: 40px;
+}
+.cryptoHeadSec p{
+    width: 50%;
+    
+}
+.marketbtndown{
+    margin-top: 50px;
+}
+
+.marketDownIcon{
+    color: red;
+    font-weight: 400;
+}
+
+.marketDownDarkBtn,
+.marketDownLightBtn{
+    padding: 10px;
+    margin: 0px 10px;
+}
+
+.marketDownDarkBtn{
+    background-image: linear-gradient(to right, #171313 , #438A9D);
+    color: white;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.marketDownDarkBtn:hover{
+    
+    background-image: linear-gradient(to right, #0b0a0a , #4ba9c3);
+
+}
+.marketDownLightBtn{
+    
+    color: black;
+    border: transparent;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------- */
+.cryptoContainer {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.cryptoMainBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 350px;
+    padding: 10px 20px;
+    background-color: white;
+    border-left: 1px solid gray;
+    margin: 10px;
+    box-sizing: border-box;
+}
+
+.cryptoUpperPart,
+.cryptoLowerPart {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.imgSet {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgSet img {
+    width: auto;
+    height: 70%;
+    max-height: 50px;
+}
+
+.spanXRP {
+    margin: 5px 10px;
+    color: black;
+    font-size: 16px;
+}
+
+.marketUpIcon {
+    color: green;
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+/* Responsiveness */
+@media (max-width: 1024px) {
+    .cryptoContainer {
+        justify-content: center;
+    }
+    .cryptoMainBox {
+        max-width: 45%;
+    }
+}
+
+@media (max-width: 768px) {
+    .cryptoMainBox {
+        max-width: 100%;
+    }
+    .cryptoUpperPart,
+    .cryptoLowerPart {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .imgSet {
+        justify-content: flex-start;
+    }
+    .marketUpIcon {
+        justify-content: flex-start;
+        text-align: left;
+    }
+}
+
+@media (max-width: 480px) {
+    .spanXRP {
+        font-size: 14px;
+    }
+    .imgSet img {
+        max-height: 40px;
+    }
+}

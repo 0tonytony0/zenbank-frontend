@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.ac7d3c45.css",
+    "main.js": "/static/js/main.066144a8.js",
+    "static/media/People2.png": "/static/media/People2.8f724623ce8082b46fbd.png",
+    "static/media/WealthGenImg.jpg": "/static/media/WealthGenImg.4cd967de1c6657cb7eb7.jpg",
+    "static/media/a044da49.png": "/static/media/ffebca516cac6ee61afd0a054afa5dd4a044da49.069fb5237358b3c3a11a.png",
+    "static/media/Loyality.png": "/static/media/Loyality.1bd6cc4428f4b22046d2.png",
+    "static/media/WealthSolution.png": "/static/media/WealthSolution.c31a464d6c7334fda5f4.png",
+    "static/media/Phone-Mockup.png": "/static/media/Phone-Mockup.c309c11a4e12869b32cc.png",
+    "static/media/MidMobile11.jpg": "/static/media/MidMobile11.cde32d29fdaeaa778e63.jpg",
+    "static/media/double-hand.png": "/static/media/double-hand.ecd6842d7427c5d8c9bc.png",
+    "static/media/IntegrationImg.png": "/static/media/IntegrationImg.8a063ed3dcfa54b49bd5.png",
+    "static/media/Container(1).png": "/static/media/Container(1).bd65a3b9351530576d01.png",
+    "static/media/midMobile.png": "/static/media/midMobile.cf0794a9152371ea5a08.png",
+    "static/media/Ai-key-logo.jpg": "/static/media/Ai-key-logo.a06164a3c3e5b35c7100.jpg",
+    "static/media/login-signup.jpg": "/static/media/login-signup.c293b6ed4aa3bbace381.jpg",
+    "static/media/mobile-1-image.png": "/static/media/mobile-1-image.c65dc54eac910746b1db.png",
+    "static/media/cardsimply.jpg": "/static/media/cardsimply.f42053be855c9464f1a8.jpg",
+    "static/media/Mobile22.png": "/static/media/Mobile22.13601f625ead03b00a97.png",
+    "static/media/CardBanner.png": "/static/media/CardBanner.c8abfa7fa37dbbb2d4d2.png",
+    "index.html": "/index.html",
+    "main.ac7d3c45.css.map": "/static/css/main.ac7d3c45.css.map",
+    "main.066144a8.js.map": "/static/js/main.066144a8.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac7d3c45.css",
+    "static/js/main.066144a8.js"
+  ]
+}

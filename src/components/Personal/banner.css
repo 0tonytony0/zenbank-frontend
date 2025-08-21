@@ -1,0 +1,578 @@
+ /* --------banner---------- */
+.personalbox {
+    width: 100%;
+    max-height: 748px;
+    overflow: hidden;
+    margin: 5px 0;
+}
+
+.titlBox {
+    display: flex;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: left;
+    height: auto;
+    width: 100%;
+    color: black;
+    flex-direction: column;
+}
+.mainMobileimg{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.mainImgBox img {
+    width: auto;
+    height: 85%;
+    z-index: 10;
+    position: absolute;
+}
+
+.mainImgBox {
+    border-radius: 10px 10px 0px 0px;
+    padding: 0 200px;
+    background-image: url(/src/assets/ffebca516cac6ee61afd0a054afa5dd4a044da49.png);
+    z-index: 0;
+    background-size: cover;
+    background-position: bottom;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+/* --------- Responsive Design Using px --------- */
+
+/* For tablets (≤ 1024px) */
+@media screen and (max-width: 1024px) {
+    .mainImgBox {
+        padding: 0 100px;
+        height: 500px;
+    }
+    .mainImgBox img {
+        height: 75%;
+    }
+
+    .titlBox {
+        margin-left: 30px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+}
+
+/* For small tablets and large phones (≤ 768px) */
+@media screen and (max-width: 768px) {
+    .mainImgBox {
+        padding: 0 50px;
+        height: 400px;
+    }
+    .mainImgBox img {
+        height: 55%;
+    }
+
+    .titlBox {
+        margin-left: 20px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+}
+
+/* For phones (≤ 480px) */
+@media screen and (max-width: 480px) {
+    .mainImgBox {
+        padding: 0 20px;
+        height: 300px;
+    }
+
+    .titlBox {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .mainImgBox img {
+        height: 40%;
+    }
+}
+
+@media screen and (max-width: 360px) {
+    .mainImgBox {
+        padding: 0 20px;
+        height: 300px;
+    }
+
+    .titlBox {
+        margin-left: 10px;
+        margin-bottom: 5px;
+        margin-top: 5px;
+    }
+
+    .mainImgBox img {
+        height: 45%;
+    }
+}
+
+
+
+/* -------------Benefit Box--------------- */
+
+.benefitBox{
+    width: 100%;
+    height: auto;
+    align-items: center;
+    justify-items: center;
+    margin: 20px 0px;
+}
+
+.boxBenefits{
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.benefithead{
+    padding: 40px;
+    color: black;
+}
+
+.benefitsPoints{
+    background-color: yellow;
+}
+
+.benefitsCard{
+    width: 100%;
+    padding: 20px 50px;
+    height: 100%;
+    background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+    color: Black;
+    box-shadow: 0px 3px 4px 0px gray;
+}
+    
+
+.fawallet{
+    margin: 10px 30px -5px 0px;
+    justify-content: center;
+    color: black;
+}
+
+
+
+/* -------------------Annual Rate--------------------- */
+
+.annualRateBox {
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+    margin: 20px 0;
+}
+
+.boxAnnual {
+    width: 90%;
+    margin: 0 auto;
+    height: auto;
+}
+
+.boxAnnual h1 {
+    color: black;
+    font-size: 36px;
+    margin: 30px 20px;
+}
+
+.annualLinkTxt {
+    color: #5DB2C8;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 24px;
+    margin: 30px 20px;
+}
+
+.arrowIcon {
+    margin-left: 10px;
+}
+
+.bitcoinBox {
+    height: 120px;
+    display: flex;
+    gap: 20px;
+    justify-content: space-evenly;
+    
+}
+
+.coinContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    width: 33%;
+    height: 100px;
+    padding: 0 10px;
+    border-bottom: 1px solid gray;
+    box-sizing: border-box;
+}
+
+.innerBitcoin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.innerBitcoin p {
+    margin: 0 10px;
+    font-size: 18px;
+    color: black;
+}
+
+.strongPer {
+    font-size: 22px;
+}
+
+
+
+.seeMorebtn {
+    border: 1px solid gray;
+    border-radius: 5px;
+    padding: 8px 12px;
+    font-size: 14px;
+    cursor: pointer;
+    color: black;
+    background-color: #fff;
+    transition: background-color 0.3s ease;
+}
+
+.seeMorebtn:hover {
+    background-color: #5DB2C8;
+    color: white;
+    border: transparent;
+}
+
+/* =============================
+   Responsive Adjustments Below
+   ============================= */
+
+@media (max-width: 768px) {
+    .bitcoinBox {
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+    }
+
+    .coinContent {
+        width: 90%;
+    }
+
+    .innerBitcoin p {
+        font-size: 16px;
+    }
+
+    .strongPer {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .boxAnnual h1 {
+        font-size: 24px;
+    }
+
+    .innerBitcoin p {
+        font-size: 14px;
+    }
+
+    .strongPer {
+        font-size: 18px;
+    }
+
+    .annualLinkTxt {
+        font-size: 14px;
+    }
+
+}
+
+
+
+
+
+
+/* ----------estimate--section--------------- */
+
+.savings-container {
+  max-width: 460px;
+  margin: 0 auto;
+  padding: 1rem;
+  color: gray;
+  border-radius: 16px;
+}
+.estimateBox{
+    margin-top: 20px;
+    margin-left: 40px;
+}
+.estimateBox h1,
+.estimateBox p{
+    color: black;
+    font-weight: 400;
+}
+
+
+.field-group {
+  margin-bottom: 1.2rem;
+}
+
+.label {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.asset-selector {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  color: #000;
+  padding: 0.75rem;
+  border-radius: 12px;
+  margin-top: 0.4rem;
+}
+
+.asset-icon {
+  width: 24px;
+  height: 24px;
+  margin-right: 0.5rem;
+}
+
+.asset-name {
+  flex: 1;
+  font-weight: 500;
+}
+
+.interest-rate {
+  font-size: 0.875rem;
+  color: #555;
+}
+
+.amount-input {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.4rem;
+  border: 1px solid #333;
+  background-color: #ffffff;
+  color: #000000;
+  border-radius: 10px;
+}
+
+.slider-group {
+  margin-top: 1.5rem;
+}
+
+.slider-labels {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.75rem;
+  color: #888;
+  margin-bottom: 0.4rem;
+}
+
+.slider-bar {
+  width: 100%;
+  height: 6px;
+  background-color: #ffffff;
+  border: 1px solid gray;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.slider-progress {
+  height: 100%;
+  background-color: #3b82f6;
+}
+
+.start-button {
+  width: 100%;
+  padding: 0.9rem;
+  margin-top: 1.5rem;
+  background-color: #111;
+  border: none;
+  border-radius: 12px;
+  color: #fff;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.start-button:hover {
+  background-color: #222;
+}
+
+.info-box {
+  background-color: #f5f5f5;
+  color: #000;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-top: 1.5rem;
+}
+
+.learn-more {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 0.8rem;
+  color: #3b82f6;
+  font-weight: 500;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.learn-more:hover {
+  text-decoration: underline;
+}
+
+.arrow-icon {
+  width: 16px;
+  height: 16px;
+  margin-left: 0.25rem;
+}
+
+
+
+
+
+
+
+
+
+/* Default styles (for large screens) */
+.simplifyBox {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+}
+
+.mainSimBox {
+    width: 1280px;
+    max-width: 90%;
+    background-color: #5DB2C8;
+}
+
+.headSimpBox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.simpHead,
+.simpTxt {
+    color: black;
+    margin: 30px;
+}
+
+.simLowerBox {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.simpImg {
+    width: 420px;
+    padding: 30px;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+
+.simpIconBox {
+    width: 640px;
+    padding: 30px;
+}
+
+.simpBoxPoints {
+    width: 100%;
+    padding: 16px 8px 30px 8px;
+    border-bottom: 2px solid black;
+    color: black;
+    border-radius: 10px;
+}
+
+.simpBoxPoints h4 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.learnMoreBtn {
+    background-color: transparent;
+    padding: 15px 30px;
+    margin-top: 20px;
+    font-size: 15px;
+    border: 2px solid black;
+    border-radius: 5px;
+}
+
+/* Responsive: for screens <= 768px */
+@media (max-width: 768px) {
+    .mainSimBox {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .headSimpBox {
+        display: block;
+    }
+
+    .simpHead,
+    .simpTxt {
+        margin: 20px;
+    }
+
+    .simLowerBox {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .simpImg {
+        width: 280px;
+        padding: 20px;
+    }
+
+    .simpIconBox {
+        width: 300px;
+        padding: 20px;
+    }
+    .simpBoxPoints{
+        display: flex;
+    }
+
+    .simpBoxPoints h4 {
+        font-size: 18px;
+    }
+
+    .learnMoreBtn {
+        width: auto;
+        padding: 12px 24px;
+        font-size: 14px;
+    }
+}
+
+/* Responsive: for screens <= 480px (small phones) */
+@media (max-width: 480px) {
+    .simpImg {
+        width: 100%;
+        padding: 15px;
+    }
+
+    .simpIconBox {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .simpBoxPoints h4 {
+        font-size: 16px;
+    }
+
+    .learnMoreBtn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
