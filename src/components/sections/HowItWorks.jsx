@@ -6,11 +6,12 @@ import { FiUserPlus, FiCreditCard, FiSend } from 'react-icons/fi';
 const Section = styled.section`
   padding: 60px 20px;
   // background-color: #fff;
-  background-color: linear-gradient(
-      135deg,
-      rgba(79, 172, 254, 0.2) 0%,
-      rgba(142, 68, 173, 0.2) 100%
-    );
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
   text-align: center;
   color: white;
 `;
@@ -44,7 +45,7 @@ const Step = styled.div`
 
 const IconWrapper = styled.div`
   margin-bottom: 20px;
-  color: #000;
+  color: white;
 `;
 
 const Title = styled.h3`
@@ -55,7 +56,7 @@ const Title = styled.h3`
 
 const Description = styled.p`
   font-size: 16px;
-  color: #555;
+  color: White;
   line-height: 1.6;
 `;
 

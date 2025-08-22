@@ -18,7 +18,7 @@ const FeaturesContainer = styled.div`
 
 const Feature = styled.div`
   padding: 40px 20px;
-  background-color: #56a2b3;
+  background-color: #0D0D2B;
   border-radius: 8px;
   width: 100%;
   max-width: 1000px;
@@ -64,7 +64,7 @@ const Title = styled.h3`
   font-size: 20px;
   font-weight: 600;
   margin: 0;
-  color: #000;
+  color: white;
 
   @media (max-width: 767px) {
     font-size: 18px;
@@ -73,7 +73,7 @@ const Title = styled.h3`
 
 const Description = styled.p`
   font-size: 16px;
-  color: #000;
+  color: white;
   margin: 0;
   line-height: 1.5;
 
@@ -93,7 +93,7 @@ const AccessSection = () => {
       <Feature>
         <FeatureRow>
           <IconBox>
-            <FaBitcoin color="black" />
+            <FaBitcoin color="white" />
           </IconBox>
           <ContentBox>
             <Title>Access 1,500+ crypto pairs</Title>
@@ -105,7 +105,7 @@ const AccessSection = () => {
 
         <FeatureRow>
           <IconBox>
-            <FaArrowRight color="black" />
+            <FaArrowRight color="white" />
           </IconBox>
           <ContentBox>
             <Title>Optimal execution</Title>
@@ -117,7 +117,7 @@ const AccessSection = () => {
 
         <FeatureRow>
           <IconBox>
-            <FaTicketAlt color="black" />
+            <FaTicketAlt color="white" />
           </IconBox>
           <ContentBox>
             <Title>Get more from every exchange</Title>

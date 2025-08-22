@@ -12,7 +12,12 @@ function CardSimplify() {
     align-items: center;
     justify-content: center;
     font-family: 'Arial', sans-serif;
-    background-color: #0D0D2B;
+    background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
     padding: 40px 20px;
   `;
 

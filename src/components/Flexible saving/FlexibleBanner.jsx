@@ -8,7 +8,7 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  color: black;
+  color: white;
   font-family: 'Arial', sans-serif;
 `;
 
@@ -30,12 +30,12 @@ const TopTxtContainer = styled.div`
 const LeftTitleBox = styled.h2`
   font-size: 36px;
   font-weight: 600;
-  color: black;
+  color: white;
   margin: 0;
   text-align: center;
 
   strong {
-    color: black;
+    color: white;
     font-weight: 800;
   }
 
@@ -62,11 +62,11 @@ const TextRightBox = styled.div`
 const Title = styled.h2`
   font-size: 22px;
   font-weight: 600;
-  color: gray;
+  color: white;
   text-align: center;
 
   strong {
-    color: black;
+    color: white;
     font-weight: 700;
   }
 
@@ -78,7 +78,7 @@ const Title = styled.h2`
 
 const SubText = styled.p`
   font-size: 18px;
-  color: #64748b;
+  color: white;
   text-align: center;
   margin: 0;
 
@@ -113,17 +113,17 @@ const Button = styled.a`
 
 const RatingText = styled.p`
   font-size: 0.9rem;
-  color: #475569;
+  color: white;
   margin-top: 10px;
   text-align: center;
 
   strong {
-    color: #fff;
+    color: white;
     font-weight: 600;
   }
 
   span {
-    color: #22c55e;
+    color: white;
     font-weight: 600;
   }
 

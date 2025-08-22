@@ -10,7 +10,7 @@ const Container = styled.div`
   background-size: cover;
   background-position: center;
   font-family: Arial, sans-serif;
-  color: #fff;
+  color: white;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -75,7 +75,7 @@ const CardLeft = styled.div`
     rgba(255, 255, 255, 0.1) 0%,
     rgba(255, 255, 255, 0.05) 100%
   );
-  color: #000;
+  color: white;
   border-radius: 12px;
   padding: 20px;
   flex: 1;

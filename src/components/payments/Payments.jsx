@@ -593,11 +593,11 @@ const CardStack = styled.div`
 `;
 
 const Card = styled.div`
-  background: ${(props) =>
-    props.primary
-      ? "linear-gradient(135deg, rgba(255,255,255,0.15) 0%, rgba(255,255,255,0.05) 100%)"
-      : "linear-gradient(135deg, rgba(255,255,255,0.1) 0%, rgba(255,255,255,0.05) 100%)"};
-
+  background: linear-gradient(
+  135deg,
+  rgba(34, 197, 94, 0.2) 0%,   /* light green (#22c55e) */
+  rgba(5, 150, 105, 0.2) 100%  /* teal green (#059669) */
+);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.15);
@@ -635,24 +635,11 @@ const CardHeader = styled.div`
 const CardIcon = styled.div`
   width: 48px;
   height: 48px;
-  background: ${({ variant, theme }) => {
-    switch (variant) {
-      case "outlined":
-        return "transparent";
-      case "green":
-        return theme.colors.green || "#28a745";
-      case "blue":
-        return theme.colors.blue || "#17a2b8";
-      default:
-        return `
-        linear-gradient(
-          135deg,
-          rgba(255, 255, 255, 0.1) 0%,
-          rgba(255, 255, 255, 0.05) 100%
-        )
-      `;
-    }
-  }};
+  background: linear-gradient(
+      135deg,
+      rgba(79, 172, 254, 0.2) 0%,
+      rgba(142, 68, 173, 0.2) 100%
+    ),
   border-radius: ${theme.borderRadius.medium};
   display: flex;
   align-items: center;
@@ -678,10 +665,10 @@ const CardNumber = styled.div`
 const CardSelectionSection = styled(Section)`
   padding: ${theme.spacing.xxl} 0;
   background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.05) 100%
-  );
+      135deg,
+      rgba(79, 172, 254, 0.2) 0%,
+      rgba(142, 68, 173, 0.2) 100%
+    ),
 `;
 
 const CardSelectionContainer = styled.div`
@@ -712,10 +699,11 @@ const CardTypeButton = styled.button`
   border-radius: ${theme.borderRadius.large};
   border: 2px solid;
   background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.05) 100%
-  );
+  135deg,
+  rgba(34, 197, 94, 0.2) 0%,   /* light green (#22c55e) */
+  rgba(5, 150, 105, 0.2) 100%  /* teal green (#059669) */
+);
+    
   border-color: ${(props) => {
     if (props.active && props.type === "virtual") {
       return theme.colors.accent;
@@ -866,10 +854,11 @@ const PhoneMockup = styled.div`
 
 const PhoneScreen = styled.div`
   background: linear-gradient(
-      135deg,
-      rgba(79, 172, 254, 0.2) 0%,
-      rgba(142, 68, 173, 0.2) 100%
-    ),
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
   border-radius: 28px;
   height: 100%;
   position: relative;
@@ -926,10 +915,10 @@ const AmountText = styled.span`
 
 const PhoneCard = styled.div`
   background: linear-gradient(
-      135deg,
-      rgba(79, 172, 254, 0.2) 0%,
-      rgba(142, 68, 173, 0.2) 100%
-    ),
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
   border-radius: ${theme.borderRadius.large};
   padding: ${theme.spacing.md};
   margin-bottom: ${theme.spacing.md};
@@ -962,10 +951,11 @@ const PhoneCardIcon = styled.div`
   width: 32px;
   height: 32px;
   background: linear-gradient(
-      135deg,
-      rgba(79, 172, 254, 0.2) 0%,
-      rgba(142, 68, 173, 0.2) 100%
-    ),
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
   border-radius: ${theme.borderRadius.medium};
   display: flex;
   align-items: center;
@@ -1038,10 +1028,11 @@ const FloatingCard = styled.div`
   left: -40px;
   top: 80px;
   background: linear-gradient(
-      135deg,
-      rgba(79, 172, 254, 0.2) 0%,
-      rgba(142, 68, 173, 0.2) 100%
-    ),
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
   border-radius: ${theme.borderRadius.medium};
   padding: ${theme.spacing.sm};
   width: 200px;
@@ -1060,10 +1051,11 @@ const FloatingCardIcon = styled.div`
   width: 32px;
   height: 32px;
    background: linear-gradient(
-      135deg,
-      rgba(79, 172, 254, 0.2) 0%,
-      rgba(142, 68, 173, 0.2) 100%
-    ),
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
   border-radius: ${theme.borderRadius.medium};
   display: flex;
   align-items: center;
@@ -1502,6 +1494,7 @@ const Payments = () => {
                 <CreditCard
                   size={32}
                   color={selectedCardType === "virtual" ? "#ec4899" : "#6b7280"}
+                // color = "white"
                 />
                 <CardTypeText>
                   <CardTypeTitle

@@ -25,7 +25,7 @@ const ImpMarketdetails = () => {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: black;
+    color: white;
     
   `;
     const MarketMainImage = styled.div`
@@ -45,12 +45,12 @@ const ImpMarketdetails = () => {
 
 
     const FeaturesContainer = styled.div`
-  background-color: #5db2c8;
+  background-color: #0D0D2B;
   padding: 40px 20px;
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  color: #000;
+  color: white;
   font-family: sans-serif;
 
   @media (max-width: 768px) {
@@ -86,7 +86,7 @@ const ImpMarketdetails = () => {
   align-items: center;
   padding: 2px 8px;
   background: #000;
-  color: #fff;
+  color: white;
   font-size: 12px;
   border-radius: 4px;
   margin: 0 4px;
@@ -122,7 +122,7 @@ const ImpMarketdetails = () => {
                         </MarketMainImage>
 
                         <MarketMainPre>
-                            Do your due diligence before trading crypto, directly from the AI Key app.
+                            Do your due diligence before trading crypto, directly from the Syzyky app.
                         </MarketMainPre>
 
 
@@ -155,12 +155,12 @@ const ImpMarketdetails = () => {
 
                         <FeatureItem>
                             <IconBox><FaFileAlt /></IconBox>
-                            <TextContent>Track trending news regarding each asset listed on AI Key.</TextContent>
+                            <TextContent>Track trending news regarding each asset listed on Syzyky.</TextContent>
                         </FeatureItem>
 
                         <FeatureItem>
                             <IconBox><FaUser /></IconBox>
-                            <TextContent>See if more AI Key clients are buying or selling specific assets.</TextContent>
+                            <TextContent>See if more Syzyky clients are buying or selling specific assets.</TextContent>
                         </FeatureItem>
 
                         <Note>

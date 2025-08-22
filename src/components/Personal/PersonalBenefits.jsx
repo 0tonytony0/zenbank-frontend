@@ -11,7 +11,7 @@ const personalBenefits = (props) => {
             <div className="benefitBox">
                 <div className="boxBenefits">
                     <div className="benefithead">
-                        <h1>{props.Heading1}</h1>
+                        <h1 style={{color: "white"}}>{props.Heading1}</h1>
                         <p>{props.Paragraph1}</p>
                     </div>
 

@@ -33,18 +33,18 @@ const ExchangeIconbox = () => {
     padding: 8px; 
     margin: 20px 0px;
     font-size: 50px;
-    color: #333;
+    color: white;
 `;
     const MyIcon2 = styled(FaArrowUpRightFromSquare)`
     padding: 8px; 
     margin: 20px 0px;
     font-size: 50px;
-    color: #333;
+    color: white;
 `;
     const Myparagraph = styled.p`
     padding: 8px; 
     font-size: 30px;
-    color: #333;
+    color: white;
 `;
 
     return (

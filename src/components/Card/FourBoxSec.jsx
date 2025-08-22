@@ -3,7 +3,12 @@ import styled from "styled-components";
 
 // Styled Components
 const SectionContainer = styled.section`
-  background-color: #0D0D2B;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
   color: white;
   padding: 50px 20px;
   text-align: center;
@@ -45,7 +50,7 @@ const Card = styled.div`
 
   h2 {
     font-size: 1.8rem;
-    color: #7b6b53;
+    color: white;
     margin-bottom: 10px;
 
     @media (max-width: 768px) {
@@ -55,7 +60,7 @@ const Card = styled.div`
 
   p {
     font-size: 1rem;
-    color: #5f5f5f;
+    color: white;
   }
 `;
 

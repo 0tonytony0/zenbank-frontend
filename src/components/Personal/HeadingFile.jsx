@@ -6,7 +6,7 @@ import BannerImg from '../../assets/mobile 1-image.png'
 const HeadingFile = () => {
 
 
-  const personalHeadTXT = "hello sangam "
+  const personalHeadTXT = "hello Nikhil Verma "
   return (
     <>
       

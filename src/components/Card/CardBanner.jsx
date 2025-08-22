@@ -79,7 +79,7 @@ const Title = styled.h2`
 
 const SubText = styled.p`
   font-size: 18px;
-  color: #64748b;
+  color: white;
   text-align: center;
   margin: 0;
 
@@ -115,17 +115,17 @@ const Button = styled.a`
 
 const RatingText = styled.p`
   font-size: 0.9rem;
-  color: #475569;
+  color: white;
   margin-top: 10px;
   text-align: center;
 
   strong {
-    color: #fff;
+    color: white;
     font-weight: 600;
   }
 
   span {
-    color: #22c55e;
+    color: white;
     font-weight: 600;
   }
 

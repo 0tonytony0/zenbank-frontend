@@ -16,7 +16,7 @@ function Flexibleterms() {
     const Flexhead1 = "Hit your long-term targets."
     const Flexhead2 = "Earn up to 14% annual interest on digital assets"
     const BenefitsHeading1 = "Savings that support your goals."
-    const BenefitsParagraph1 = "Join the AI Key Loyalty Program and benefit from industry-leading rates with an account balance above $5,000."
+    const BenefitsParagraph1 = "Join the Syzyky Loyalty Program and benefit from industry-leading rates with an account balance above $5,000."
     const BenefitsHeading2 = "Earn even higher rates"
     const BenefitsParagraph2 = "Earn extra yield on top of our Flexible Savings rates with 1, 3, or 12-month terms."
     const BenefitsHeading3 = " Preserve wealth over time "

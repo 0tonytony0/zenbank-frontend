@@ -6,14 +6,14 @@ import { FaCoins } from "react-icons/fa";
 
 const Section = styled.section`
   padding: 60px 20px;
-  background-color: #fff;
+  background-color: #0D0D2B;
 `;
 
 const Heading = styled.h2`
   font-size: 40px;
   font-weight: 400;
   margin-bottom: 40px;
-  color: black;
+  color: white;
   text-align: left;
   max-width: 900px;
   margin-left: auto;
@@ -57,19 +57,19 @@ const Step = styled.div`
 
 const IconWrapper = styled.div`
   margin-bottom: 20px;
-  color: black;
+  color: white;
 `;
 
 const Title = styled.h3`
   font-size: 22px;
   font-weight: 600;
   margin-bottom: 10px;
-  color: black;
+  color: white;
 `;
 
 const Description = styled.p`
   font-size: 16px;
-  color: black;
+  color: white;
   line-height: 1.6;
 `;
 
@@ -94,7 +94,7 @@ const steps = [
 const AiecoSection = () => {
   return (
     <Section>
-      <Heading>Utilize the entire AI Key ecosystem to grow your wealth.</Heading>
+      <Heading>Utilize the entire Syzyky ecosystem to grow your wealth.</Heading>
       <Grid>
         {steps.map((step, idx) => (
           <Step key={idx} isLast={idx === steps.length - 1}>

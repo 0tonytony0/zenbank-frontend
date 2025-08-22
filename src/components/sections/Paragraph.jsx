@@ -22,10 +22,11 @@ const DataBox = styled.div`
     flex: 1;
     max-width: 450px;
     background: linear-gradient(
-      135deg,
-      rgba(79, 172, 254, 0.2) 0%,
-      rgba(142, 68, 173, 0.2) 100%
-    ),
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
     border-radius: 8px;
     padding: 24px 12px;
     // box-shadow: 0 2px 8px rgba(0,0,0,0.04);

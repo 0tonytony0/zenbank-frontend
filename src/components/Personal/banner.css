@@ -239,7 +239,7 @@
     padding: 8px 12px;
     font-size: 14px;
     cursor: pointer;
-    color: black;
+    color: white;
     background-color: #fff;
     transition: background-color 0.3s ease;
 }
@@ -304,7 +304,7 @@
   max-width: 460px;
   margin: 0 auto;
   padding: 1rem;
-  color: gray;
+  color: white;
   border-radius: 16px;
 }
 .estimateBox{
@@ -313,7 +313,7 @@
 }
 .estimateBox h1,
 .estimateBox p{
-    color: black;
+    color: white;
     font-weight: 400;
 }
 
@@ -331,7 +331,7 @@
   display: flex;
   align-items: center;
   background-color: #fff;
-  color: #000;
+  color: white;
   padding: 0.75rem;
   border-radius: 12px;
   margin-top: 0.4rem;
@@ -359,7 +359,7 @@
   margin-top: 0.4rem;
   border: 1px solid #333;
   background-color: #ffffff;
-  color: #000000;
+  color: white;
   border-radius: 10px;
 }
 
@@ -371,7 +371,7 @@
   display: flex;
   justify-content: space-between;
   font-size: 0.75rem;
-  color: #888;
+  color: white;
   margin-bottom: 0.4rem;
 }
 
@@ -407,7 +407,7 @@
 
 .info-box {
   background-color: #f5f5f5;
-  color: #000;
+  color: white;
   padding: 1rem;
   border-radius: 12px;
   margin-top: 1.5rem;
@@ -491,7 +491,7 @@
     width: 100%;
     padding: 16px 8px 30px 8px;
     border-bottom: 2px solid black;
-    color: black;
+    color: white;
     border-radius: 10px;
 }
 

@@ -96,7 +96,7 @@ const Footer = () => {
           <FooterLink href="#">Fixed-term Savings</FooterLink>
           <FooterLink href="#">Exchange</FooterLink>
           {/* <FooterLink href="#">Credit Line</FooterLink> */}
-          <FooterLink href="#">AI Key Card</FooterLink>
+          <FooterLink href="#">Syzyky Card</FooterLink>
           <FooterLink href="#">Dual Investment</FooterLink>
           <FooterLink href="#">Futures</FooterLink>
           {/* <FooterLink href="#">Loyalty Program</FooterLink> */}
@@ -112,7 +112,7 @@ const Footer = () => {
           <FooterLink href="#">Corporates</FooterLink>
           <FooterLink href="#">Institutions</FooterLink>
           <FooterLink href="#">White Label</FooterLink>
-          <FooterLink href="#">AI Key Ventures</FooterLink>
+          <FooterLink href="#">Syzyky Ventures</FooterLink>
         </Column>
 
         {/* Company Column */}
@@ -140,13 +140,13 @@ const Footer = () => {
           <FooterLink href="#">Services Terms</FooterLink>
           {/* <FooterLink href="#">Credit Terms</FooterLink> */}
           <FooterLink href="#">DeFi Terms</FooterLink>
-          <FooterLink href="#">AI Key Card Terms</FooterLink>
+          <FooterLink href="#">Syzyky Card Terms</FooterLink>
           <FooterLink href="#">Cookies Policy</FooterLink>
         </Column>
 
-        {/* Follow Ai key Section */}
+        {/* Follow Syzyky Section */}
         <FollowSection>
-          <ColumnTitle>Follow Ai Key</ColumnTitle>
+          <ColumnTitle>Follow Syzyky</ColumnTitle>
           <IconContainer>
             <IconPlaceholder />
             <IconPlaceholder />

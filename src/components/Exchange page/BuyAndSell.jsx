@@ -13,7 +13,12 @@ const BuyAndSellSelection = () => {
     align-items: center;
     justify-content: space-between;
     padding: 40px;
-    background-color: #ffffff;
+    background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
     gap: 20px;
 
     @media (max-width: 768px) {
@@ -30,7 +35,7 @@ const BuyAndSellSelection = () => {
   const Title = styled.h1`
     font-size: 36px;
     font-weight: 600;
-    color: #0a0a0a;
+    color: white;
     line-height: 1.3;
     margin: 0;
 
@@ -40,13 +45,18 @@ const BuyAndSellSelection = () => {
   `;
 
   const Highlight = styled.span`
-    color: #0a0a0a;
+    color: white;
   `;
 
   const ContainerCard = styled.div`
     flex: 1;
     padding: 30px;
-    background-color: #f7f8fa;
+    background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+
     border-radius: 16px;
     text-align: left;
     max-width: 500px;
@@ -59,12 +69,12 @@ const BuyAndSellSelection = () => {
   const Description = styled.p`
     font-size: 19px;
     font-weight: 400;
-    color: #555;
+    color: white;
     margin: 0;
   `;
 
   // Icon sections
- const ExchangeIconBox = styled.div`
+  const ExchangeIconBox = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
@@ -75,7 +85,7 @@ const BuyAndSellSelection = () => {
   }
 `;
 
-const Miniiconbox = styled.div`
+  const Miniiconbox = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -88,7 +98,7 @@ const Miniiconbox = styled.div`
   }
 `;
 
-const Iconbox = styled.div`
+  const Iconbox = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -104,33 +114,33 @@ const Iconbox = styled.div`
   }
 `;
 
-const MyIcon1 = styled(FaArrowUpRightFromSquare)`
+  const MyIcon1 = styled(FaArrowUpRightFromSquare)`
   font-size: 50px;
-  color: #333;
+  color: white;
   margin-bottom: 20px;
 `;
 
-const MyIcon2 = styled(SiCircle)`
+  const MyIcon2 = styled(SiCircle)`
   font-size: 50px;
-  color: #333;
+  color: white;
   margin-bottom: 20px;
 `;
 
-const MyIcon3 = styled(PiHandCoins)`
+  const MyIcon3 = styled(PiHandCoins)`
   font-size: 50px;
-  color: #333;
+  color: white;
   margin-bottom: 20px;
 `;
 
-const MyIcon4 = styled(BiSolidOffer)`
+  const MyIcon4 = styled(BiSolidOffer)`
   font-size: 50px;
-  color: #333;
+  color: white;
   margin-bottom: 20px;
 `;
 
-const Myparagraph = styled.p`
+  const Myparagraph = styled.p`
   font-size: 18px;
-  color: #333;
+  color: white;
   line-height: 1.5;
   margin: 0;
 `;
@@ -175,25 +185,25 @@ const Myparagraph = styled.p`
 
         <ContainerCard>
           <Description>
-            Save time by automatically borrowing against your portfolio and buying more crypto in one go with the AI Key Booster.
+            Save time by automatically borrowing against your portfolio and buying more crypto in one go with the Syzyky Booster.
           </Description>
         </ContainerCard>
       </HeaderWrapper>
 
-       <ExchangeIconBox>
+      <ExchangeIconBox>
         <Miniiconbox>
           <Iconbox>
             <MyIcon3 />
             <Myparagraph>Finance the purchase through a flexible Credit Line you can repay anytime.</Myparagraph>
           </Iconbox>
           <Iconbox>
-            <MyIcon4/>
+            <MyIcon4 />
             <Myparagraph>Manage the risk on your boosted positions more effectively with take profit and stop loss orders.</Myparagraph>
           </Iconbox>
         </Miniiconbox>
       </ExchangeIconBox>
 
-     
+
     </>
   );
 };

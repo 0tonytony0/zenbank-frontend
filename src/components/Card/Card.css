@@ -19,7 +19,7 @@
 
 .simpHead,
 .simpTxt {
-    color: black;
+    color: white;
     margin: 30px;
 }
 
@@ -47,7 +47,7 @@
     width: 100%;
     padding: 16px 8px 30px 8px;
     border-bottom: 2px solid black;
-    color: black;
+    color: white;
 }
 
 .simpBoxPoints h4 {

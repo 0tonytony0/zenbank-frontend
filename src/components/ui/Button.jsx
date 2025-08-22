@@ -20,8 +20,8 @@ const StyledButton = styled.button`
       case 'blue':
         return theme.colors.blue || '#17a2b8';
       default:
-        // 🔥 Your gradient
-        return `linear-gradient(to right, #007bff, #8A2BE2)`;
+        // ✅ Blue-Violet Gradient (Sign In / Sign Up style)
+        return `linear-gradient(135deg, #3b82f6, #8b5cf6)`;
     }
   }};
 
@@ -52,8 +52,8 @@ const StyledButton = styled.button`
         case 'blue':
           return theme.colors.blue || '#17a2b8';
         default:
-          // 🔥 Hover gradient
-          return `linear-gradient(to right, #0166d3, #6d09ca)`;
+          // ✅ Darker Hover Blue-Violet Gradient
+          return `linear-gradient(135deg, #2563eb, #7c3aed)`;
       }
     }};
     color: #fff;

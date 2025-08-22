@@ -12,7 +12,7 @@ const Container = styled.div`
   background-image: url(${WealthGenImg}); // Replace with actual image URL
   background-size: cover;
   background-position: center;
-  color: #fff;
+  color: white;
   font-family: Arial, sans-serif;
   min-height: 100vh;
 
@@ -61,7 +61,7 @@ const Subtitle = styled.p`
 
 const SignInButton = styled.button`
   background: linear-gradient(135deg, #4facfe 0%, #8e2de2 100%); // Blue → Violet Gradient
-  color: #fff;
+  color: white;
   padding: 12px 24px;
   border: none;
   border-radius: 25px;
