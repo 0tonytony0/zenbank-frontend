@@ -155,6 +155,8 @@ const Card = styled.div`
 const CryptoImg = styled.img`
   width: 32px;
   height: 32px;
+  // heigth: 15px;
+  // width: 15px;
 `;
 
 

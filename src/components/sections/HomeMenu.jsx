@@ -11,7 +11,7 @@ import WealthSolutions from "./WealthSolutions";
 import WhoItsFor from "./WhoItsFor";
 import FundamentalsComponent from "./Fundamentals";
 import WealthGenerationComponent from "./WealthGEneration";
-import IntegrationsComponent from "./IntegrationComponents";
+// import IntegrationsComponent from "./IntegrationComponents";
 import FAQ from "./FrequienlyQuestion";
 
 
@@ -33,7 +33,7 @@ function HomeMenu() {
             <AppFeatures />
             <FundamentalsComponent />
             <WealthGenerationComponent />
-            <IntegrationsComponent />
+            {/* <IntegrationsComponent /> */}
             <FAQ />
 </> 
     );
