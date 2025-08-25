@@ -1,4 +1,4 @@
-const API = "http://aikey-app.eba-ui6srfa5.us-west-2.elasticbeanstalk.com/api/v1/aikey"; 
+const API = "https://api.syzyky.org/api/v1/aikey";
 
 //login page of user
 
@@ -29,7 +29,7 @@ export const getLogin = async (credentials) => {
 
 export const sendResetMail = async (data) => {
   try {
-    const res = await fetch('http://aikey-app.eba-ui6srfa5.us-west-2.elasticbeanstalk.com/api/v1/aikey/forget-password', {
+    const res = await fetch('https://api.syzyky.org/api/v1/aikey/forget-password', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
@@ -44,7 +44,7 @@ export const sendResetMail = async (data) => {
 
 export const verifyOTP = async (data) => {
   try {
-    const res = await fetch('http://aikey-app.eba-ui6srfa5.us-west-2.elasticbeanstalk.com/api/v1/aikey/verify-otp', {
+    const res = await fetch('https://api.syzyky.org/api/v1/aikey/verify-otp', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),
@@ -64,7 +64,7 @@ export const resetPassword = async (data) => {
   }
 
   try {
-    const res = await fetch(`http://aikey-app.eba-ui6srfa5.us-west-2.elasticbeanstalk.com/api/v1/aikey/reset-password/${token}`, {
+    const res = await fetch(`https://api.syzyky.org/api/v1/aikey/reset-password/${token}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data),  // { email, password }
