@@ -30,7 +30,7 @@ const MainTitle = styled.h2`
 
 const SubTitle = styled.p`
   font-size: 16px;
-  color: #666;
+  color: ${({ theme }) => `${theme.colors.textLight}150`};
 `;
 
 const FeaturesList = styled.div`
@@ -63,6 +63,7 @@ const Title = styled.h3`
 const Description = styled.p`
   font-size: 15px;
   line-height: 1.6;
+  color: ${({ theme }) => `${theme.colors.textLight}150`};
 `;
 
 const features = [

@@ -209,7 +209,9 @@ const LogIn = () => {
         const encodedToken = encodeURIComponent(result.token);
 
         // Redirect to dashboard with token in URL
-        window.location.href = `http://51.20.143.202/auth?token=${encodedToken}&email=${encodeURIComponent(email)}`;
+
+        window.location.href = `https://dashboard.syzyky.org/auth?token=${encodedToken}&email=${encodeURIComponent(email)}`;
+        // window.location.href = `http://51.20.143.202/auth?token=${encodedToken}&email=${encodeURIComponent(email)}`;
         // window.location.href = `http://35.89.212.125:3000/auth?token=${encodedToken}&email=${encodeURIComponent(email)}`;
         // window.location.href = `http://localhost:5173/auth?token=${encodedToken}&email=${encodeURIComponent(email)}`;
         // window.location.href = `http://sangamjhaprojects.dedyn.io:3000/auth?token=${encodedToken}&email=${encodeURIComponent(email)}`;

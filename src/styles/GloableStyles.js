@@ -57,7 +57,7 @@ export const GlobalStyles = createGlobalStyle`
     transition: background 0.3s ease, transform 0.2s ease;
 
     &:hover {
-      background: linear-gradient(135deg, #3b3b3b, #1f1f1f);
+      background: background: linear-gradient(135deg, #0166d3 0%, #6d09ca 100%);
       transform: translateY(-2px); /* subtle lift */
       box-shadow: none; /* remove neon glow */
     }

@@ -22,13 +22,13 @@ const perAnnual = () => {
 
       <div className="annualRateBox">
         <div className="boxAnnual">
-          <h1>Annual rates that drive your long-term success.</h1>
+          <h1 style={{color: "white"}}>Annual rates that drive your long-term success.</h1>
           <span className="annualLinkTxt">Learn about Fixed-term Savings <MdPlayArrow className="arrowIcon" size={25} /></span>
 
           <div className="bitcoinBox">
             <div className="coinContent">
               <div className="innerBitcoin">
-                <img src={CurrencyBIT} alt="" />
+                <img src={CurrencyBIT} alt="" style={{height: "45px", width: "45px"}}/>
                 <p>Up to <b><strong className="strongPer">6%</strong></b><br></br> on BTC</p>
               </div>
               <div className="innerBitcoin"><CiSquarePlus size={40} style={{ color: "black" }} /></div>
@@ -65,7 +65,7 @@ const perAnnual = () => {
             </div>
             <div className="coinContent">
               <div className="innerBitcoin">
-                <img src={CurrencyGBPX} alt="" />
+                <img src={CurrencyGBPX} alt="" style={{height: "45px", width: "45px"}}/>
                 <p>Up to <b><strong className="strongPer">9%</strong></b><br></br> on GBPx</p>
               </div>
               <div className="innerBitcoin"><CiSquarePlus size={40} style={{ color: "black" }} /></div>

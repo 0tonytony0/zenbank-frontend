@@ -4,6 +4,7 @@ import styled from 'styled-components';
 // Styled Components
 const Container = styled.div`
   background: ""#0D0D2B";
+  margin-top: "1rem";
   padding: 60px 20px;
   font-family: Arial, sans-serif;
   text-align: center;
@@ -16,6 +17,7 @@ const TitleWrapper = styled.div`
   padding: 20px 10px;
   border-radius: 12px;
   margin: 0 auto 40px auto;
+  margin-bottom: "1rem";
 
   @media (max-width: 768px) {
     width: 90%;
@@ -45,8 +47,9 @@ const Title = styled.h2`
 
 const SubTitle = styled.h3`
   font-size: 20px;
-  color: white;
+  color: ${({ theme }) => `${theme.colors.textLight}150`};
   margin: 10px 0 0;
+  margin-bottom : "1rem";
   font-weight: 500;
 
   @media (max-width: 768px) {
@@ -106,7 +109,7 @@ const Icon = styled.span`
 
 const CardText = styled.p`
   font-size: 16px;
-  color: white;
+  color: ${({ theme }) => `${theme.colors.textLight}150`};
   margin: 0;
   font-weight: 700;
   text-align: center;

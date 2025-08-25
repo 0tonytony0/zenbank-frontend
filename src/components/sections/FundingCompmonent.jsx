@@ -36,7 +36,7 @@ const Title = styled.h2`
 
 const Subtitle = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.regular};
-  color: ${({ theme }) => theme.colors.textLight};
+  color: ${({ theme }) => `${theme.colors.textLight}150`};
   margin-top: ${({ theme }) => theme.spacing.sm};
 `;
 
@@ -79,7 +79,7 @@ const Icon = styled.div`
 const CardTitle = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.medium};
   font-weight: bold;
-  color: ${({ theme }) => theme.colors.text};
+  color: ${({ theme }) => `${theme.colors.textLight}150`};
   margin: 0;
 `;
 
@@ -109,8 +109,9 @@ const FundingComponent = () => {
       <Container>
         <Header>
           <HeaderTop>
-            <QuoteIcon>“</QuoteIcon>
+            <QuoteIcon>"</QuoteIcon>
             <Title>Fund your account effortlessly.</Title>
+            <QuoteIcon>"</QuoteIcon>
           </HeaderTop>
           <Subtitle>
             Add funds via bank transfers under your name, or choose from simple alternatives that match your needs.

@@ -73,7 +73,8 @@ const Title = styled.h1`
 
 const SubText = styled.p`
   font-size: 1rem;
-  color: ${({ theme }) => theme.colors.textLight};
+  // color: ${({ theme }) => theme.colors.textLight};
+  color: ${({ theme }) => `${theme.colors.textLight}150`};
   margin: 20px 0;
   max-width: 500px;
 

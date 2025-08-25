@@ -18,7 +18,7 @@ const Title = styled.h2`
 
 const Subtitle = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.medium};
-  color: ${({ theme }) => theme.colors.textLight};
+  color: ${({ theme }) => `${theme.colors.textLight}150`};
   margin-top: ${({ theme }) => theme.spacing.sm};
 `;
 
@@ -55,7 +55,7 @@ const CardTitle = styled.h3`
 
 const CardDescription = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.regular};
-  color: ${({ theme }) => theme.colors.textLight};
+  color: ${({ theme }) => `${theme.colors.textLight}150`};
 `;
 
 const Features = () => {

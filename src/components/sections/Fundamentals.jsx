@@ -52,7 +52,7 @@ const Title = styled.h2`
 
 const Subtitle = styled.p`
   font-size: 18px;
-  color: 'white';
+  color: ${({ theme }) => `${theme.colors.textLight}150`};
   margin: 0;
   max-width: 400px;
 
@@ -123,7 +123,7 @@ const StatNumber = styled.h3`
 
 const StatDescription = styled.p`
   font-size: 16px;
-  color: 'white';
+  color: ${({ theme }) => `${theme.colors.textLight}150`};
   margin: 0;
 
   @media (max-width: 768px) {

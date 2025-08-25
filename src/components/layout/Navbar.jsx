@@ -178,27 +178,27 @@ const SubMenuItem = styled.li`
   }
 `;
 
-// SubMenu component
+
 const SubMenu = ({ onItemClick, isMobile }) => (
   <>
     {isMobile ? (
-      // ✅ MOBILE version — each item wrapped in <Link>
+      // ✅ MOBILE version
       <ul style={{ listStyle: "none", paddingLeft: "1.25rem", margin: 0 }}>
         {subMenuItems.flatMap((section) =>
           section.items.map((item) => (
             <li
               key={item.title}
               style={{
-                listStyleType: "disc",
+                listStyleType: "none",
                 listStylePosition: "outside",
-                color: "#333",
+                color: "white", // 🔥 Force black text
                 marginBottom: "0.5rem",
               }}
             >
               <Link
                 to={item.path}
                 onClick={onItemClick}
-                style={{ textDecoration: "none", color: "inherit" }}
+                style={{ textDecoration: "none", color: "white" }}
               >
                 <strong>{item.title}</strong>
               </Link>
@@ -207,7 +207,7 @@ const SubMenu = ({ onItemClick, isMobile }) => (
         )}
       </ul>
     ) : (
-      // ✅ DESKTOP version — same logic, just with description too
+      // ✅ DESKTOP version
       subMenuItems.map((section) => (
         <SubMenuSection
           key={section.heading}
@@ -215,31 +215,45 @@ const SubMenu = ({ onItemClick, isMobile }) => (
           aria-label={section.heading}
         >
           <h3
-            style={{ color: "black" }}
-            css={`
-              font-size: 1.1rem;
-              font-weight: 600;
-              margin-bottom: ${({ theme }) => theme.spacing.xs};
-            `}
+            style={{
+              color: "white", // 🔥 Heading black
+              fontSize: "1.1rem",
+              fontWeight: 600,
+              marginBottom: "0.5rem",
+            }}
           >
             {section.heading}
           </h3>
 
-          <ul style={{ listStyle: "none" }}>
+          <ul
+            style={{
+              listStyle: "none", // 🔥 mimic mobile style
+              paddingLeft: "1.25rem",
+              margin: 0,
+              color: "white", // 🔥 Force black text
+            }}
+          >
             {section.items.map((item) => (
-              <li key={item.title}>
+              <li
+                key={item.title}
+                style={{
+                  marginBottom: "0.5rem",
+                  color: "white", // 🔥 li text black
+                }}
+              >
                 <Link
                   to={item.path}
                   onClick={onItemClick}
-                  style={{ textDecoration: "none" }}
+                  style={{ textDecoration: "none", color: "white" }}
                 >
                   <SubMenuItem
                     tabIndex={0}
                     role="menuitem"
                     onKeyDown={(e) => e.key === "Enter" && onItemClick()}
+                    style={{ color: "white" }} // 🔥 SubMenu item text black
                   >
-                    <strong>{item.title}</strong>
-                    <p>{item.description}</p>
+                    <strong style={{color: "white"}}>{item.title}</strong>
+                    <p style={{ margin: 0, color: "gray" }}>{item.description}</p>
                   </SubMenuItem>
                 </Link>
               </li>
@@ -250,6 +264,7 @@ const SubMenu = ({ onItemClick, isMobile }) => (
     )}
   </>
 );
+
 
 // Navbar component
 const Navbar = () => {
