@@ -470,7 +470,7 @@
 //             ) : (
 //               <AppDisplay>
 //                 <div className="app-icon">AK</div>
-//                 <div className="app-name">AI Key Pay</div>
+//                 <div className="app-name">SYZYKY Pay</div>
 //                 <div className="app-description">
 //                   Smart crypto payment solution with AI-powered security and instant transactions
 //                 </div>

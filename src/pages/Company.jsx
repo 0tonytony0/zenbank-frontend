@@ -291,7 +291,7 @@ const Company = () => {
           <SubHeading>📬 Contact</SubHeading>
           <p>
             Email:{" "}
-            <ContactLink href="mailto:contact@ai-key.io">contact@syzyky.io</ContactLink>
+            <ContactLink href="mailto:contact@syzyky.io">contact@syzyky.io</ContactLink>
           </p>
           <p>
             LinkedIn:{" "}

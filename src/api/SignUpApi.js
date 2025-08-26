@@ -1,4 +1,4 @@
-const API_URL = "http://aikey-app.eba-ui6srfa5.us-west-2.elasticbeanstalk.com/api/v1/aikey";
+const API_URL = "https://api.syzyky.org/api/v1/aikey";
 
 //signup page of user
 

@@ -47,6 +47,7 @@ const Title = styled.h2`
 
 const SubTitle = styled.h3`
   font-size: 20px;
+  padding-bottom: 10px;
   color: ${({ theme }) => `${theme.colors.textLight}150`};
   margin: 10px 0 0;
   margin-bottom : "1rem";

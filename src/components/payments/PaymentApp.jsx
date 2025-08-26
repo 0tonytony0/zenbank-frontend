@@ -925,7 +925,7 @@ export default function PaymentApp() {
           </MainHeading>
           
           <Description>
-            Experience the future of payments with AI Key Pay. Lightning-fast transactions, 
+            Experience the future of payments with SyZyKy Pay. Lightning-fast transactions, 
             military-grade security, and seamless crypto-to-fiat conversion.
           </Description>
           

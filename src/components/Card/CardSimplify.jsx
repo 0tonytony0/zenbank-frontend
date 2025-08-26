@@ -160,7 +160,7 @@ function CardSimplify() {
                 <CardMidBox2>
                     <CardHead2>
                         <TextBox1>
-                            <img src={CardSimImg} alt="AI Key Card" />
+                            <img src={CardSimImg} alt="SyZyKy Card" />
                         </TextBox1>
                     </CardHead2>
 

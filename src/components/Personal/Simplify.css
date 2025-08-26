@@ -1,34 +1,160 @@
+/* Simplify.css */
+.simplifyBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: #0a1a3b; /* Dark blue background */
+  min-height: 100vh;
+}
+
 .mainSimBox {
-  background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.05) 100%
-  );
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  margin-top: 2rem;
+  max-width: 1200px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+}
+
+.headSimpBox {
+  text-align: center;
+}
+
+.simpHead h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #ffffff; /* White text for contrast */
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.simpTxt p {
+  font-size: 1.2rem;
+  color: #b0c4de; /* Light gray-blue for readability */
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.simLowerBox {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
 }
 
 .simpImg img {
-  width: 300px;
-  height: auto;
   max-width: 100%;
-  border-radius: 12px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); /* Darker shadow for depth */
+  transition: transform 0.3s ease;
 }
 
-.learnMoreBtn{
-    background: linear-gradient(
-      135deg,
-      rgba(79, 172, 254, 0.2) 0%,
-      rgba(142, 68, 173, 0.2) 100%
-    )
+.simpImg img:hover {
+  transform: scale(1.05);
 }
 
-/* .learnMoreBtn :hover{
-    background: linear-gradient(
-      135deg,
-      rgba(79, 172, 254, 0.2) 0%,
-      rgba(142, 68, 173, 0.2) 100%
-    )
-} */
+.simpIconBox {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 500px;
+}
+
+.simpBoxPoints h4 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #e6f0ff; /* Light text for contrast */
+  background: rgba(255, 255, 255, 0.1); /* Semi-transparent white for card effect */
+  padding: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.simpBoxPoints h4:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.3);
+}
+
+.fawallet {
+  color: #00d4ff; /* Bright cyan for icons to stand out */
+}
+
+.lernBtn {
+  display: flex;
+  justify-content: center;
+}
+
+.learnMoreBtn {
+  background: #00d4ff; /* Cyan button to match icons */
+  color: #0a1a3b; /* Dark blue text for contrast */
+  border: none;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.learnMoreBtn:hover {
+  background: #00b8e6; /* Slightly darker cyan on hover */
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .simLowerBox {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .simpHead h2 {
+    font-size: 2rem;
+  }
+
+  .simpTxt p {
+    font-size: 1rem;
+  }
+
+  .simpImg img {
+    max-width: 80%;
+    margin: 0 auto;
+  }
+
+  .simpBoxPoints h4 {
+    font-size: 1rem;
+    padding: 0.8rem;
+  }
+
+  .learnMoreBtn {
+    padding: 0.7rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .simpHead h2 {
+    font-size: 1.8rem;
+  }
+
+  .simpTxt p {
+    font-size: 0.9rem;
+  }
+
+  .simpImg img {
+    max-width: 100%;
+  }
+
+  .simpBoxPoints h4 {
+    font-size: 0.9rem;
+    gap: 0.8rem;
+  }
+}

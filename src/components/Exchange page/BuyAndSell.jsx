@@ -1,210 +1,269 @@
-import React from "react";
-import styled from "styled-components";
-import { FaArrowUpRightFromSquare } from "react-icons/fa6";
-import { SiCircle } from "react-icons/si";
-import { PiHandCoins } from "react-icons/pi";
-import { BiSolidOffer } from "react-icons/bi";
+import React from 'react';
+import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
+import { SiCircle } from 'react-icons/si';
+import { PiHandCoins } from 'react-icons/pi';
+import { BiSolidOffer } from 'react-icons/bi';
 
-const BuyAndSellSelection = () => {
-  // Layout wrappers
-  const HeaderWrapper = styled.div`
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.05) 100%
-  );
-
-    gap: 20px;
-
-    @media (max-width: 768px) {
-      flex-direction: column;
-      padding: 20px;
-      text-align: center;
-    }
-  `;
-
-  const TextSection = styled.div`
-    flex: 1;
-  `;
-
-  const Title = styled.h1`
-    font-size: 36px;
-    font-weight: 600;
-    color: white;
-    line-height: 1.3;
-    margin: 0;
-
-    @media (max-width: 768px) {
-      font-size: 28px;
-    }
-  `;
-
-  const Highlight = styled.span`
-    color: white;
-  `;
-
-  const ContainerCard = styled.div`
-    flex: 1;
-    padding: 30px;
-    background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.05) 100%
-  );
-
-    border-radius: 16px;
-    text-align: left;
-    max-width: 500px;
-
-    @media (max-width: 768px) {
-      padding: 20px;
-    }
-  `;
-
-  const Description = styled.p`
-    font-size: 19px;
-    font-weight: 400;
-    color: white;
-    margin: 0;
-  `;
-
-  // Icon sections
-  const ExchangeIconBox = styled.div`
-  display: flex;
-  justify-content: center;
+// Styled Components
+const SectionWrapper = styled.section`
   width: 100%;
-  margin: 40px 0;
+  padding: 3rem 1rem;
+  background: ${({ theme }) => theme.colors.background || '#1a1a2e'};
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
 
-  @media (max-width: 768px) {
-    margin: 20px 0;
+  @media (min-width: 768px) {
+    padding: 4rem 2rem;
+  }
+
+  @media (min-width: 1024px) {
+    padding: 5rem 4rem;
   }
 `;
 
-  const Miniiconbox = styled.div`
+const HeaderWrapper = styled(motion.div)`
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+  border-radius: 12px;
+  max-width: 1200px;
   width: 100%;
+  gap: 1.5rem;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
 
   @media (max-width: 768px) {
     flex-direction: column;
-    gap: 20px;
+    padding: 1.5rem;
+    text-align: center;
   }
 `;
 
-  const Iconbox = styled.div`
+const TextSection = styled.div`
+  flex: 1;
+  min-width: 0;
+`;
+
+const Title = styled.h1`
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: ${({ theme }) => theme.colors.text || '#ffffff'};
+  line-height: 1.3;
+  margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
+`;
+
+const Highlight = styled.span`
+  color: ${({ theme }) => theme.colors.primary || '#4facfe'};
+`;
+
+const ContainerCard = styled.div`
+  flex: 1;
+  padding: 1.5rem;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 8px;
+  text-align: left;
+  max-width: 500px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+  &:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (max-width: 768px) {
+    padding: 1rem;
+    max-width: 100%;
+  }
+`;
+
+const Description = styled.p`
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: ${({ theme }) => theme.colors.textLight || '#ffffff'};
+  margin: 0;
+  line-height: 1.6;
+
+  @media (max-width: 768px) {
+    font-size: 1rem;
+  }
+
+  b {
+    color: ${({ theme }) => theme.colors.text || '#ffffff'};
+    font-weight: 600;
+  }
+`;
+
+const ExchangeIconBox = styled(motion.div)`
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 2rem 0;
+
+  @media (max-width: 768px) {
+    margin: 1.5rem 0;
+  }
+`;
+
+const MiniIconBox = styled.div`
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  width: 100%;
+
+  @media (min-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+`;
+
+const IconBox = styled(motion.div)`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  flex: 1 1 40%;
-  padding: 20px 30px;
-  margin: 5px 30px;
-  border-left: 2px solid black;
+  padding: 1.5rem;
+  border-left: 2px solid ${({ theme }) => theme.colors.textLight || '#a0a0c0'};
+  transition: background 0.3s ease;
+
+  &:hover {
+    background: rgba(255, 255, 255, 0.05);
+  }
 
   @media (max-width: 768px) {
     border-left: none;
-    border-top: 1px solid black;
-    padding: 20px 20px;
+    border-top: 1px solid ${({ theme }) => theme.colors.textLight || '#a0a0c0'};
+    padding: 1rem;
   }
 `;
 
-  const MyIcon1 = styled(FaArrowUpRightFromSquare)`
-  font-size: 50px;
-  color: white;
-  margin-bottom: 20px;
+const IconWrapper = styled.div`
+  font-size: 2.5rem;
+  color: ${({ theme }) => theme.colors.primary || '#4facfe'};
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+
+  @media (max-width: 768px) {
+    font-size: 2rem;
+    width: 2.5rem;
+    height: 2.5rem;
+  }
 `;
 
-  const MyIcon2 = styled(SiCircle)`
-  font-size: 50px;
-  color: white;
-  margin-bottom: 20px;
-`;
-
-  const MyIcon3 = styled(PiHandCoins)`
-  font-size: 50px;
-  color: white;
-  margin-bottom: 20px;
-`;
-
-  const MyIcon4 = styled(BiSolidOffer)`
-  font-size: 50px;
-  color: white;
-  margin-bottom: 20px;
-`;
-
-  const Myparagraph = styled.p`
-  font-size: 18px;
-  color: white;
-  line-height: 1.5;
+const MyParagraph = styled.p`
+  font-size: 1rem;
+  color: ${({ theme }) => theme.colors.textLight || '#a0a0c0'};
+  line-height: 1.6;
   margin: 0;
+
+  @media (max-width: 768px) {
+    font-size: 0.875rem;
+  }
 `;
 
+// Animation Variants
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.2,
+    },
+  },
+};
 
+const itemVariants = {
+  hidden: { opacity: 0, y: 20 },
+  visible: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      ease: 'easeOut',
+    },
+  },
+};
+
+const BuyAndSellSelection = () => {
   return (
-    <>
-      <HeaderWrapper>
+    <SectionWrapper>
+      <HeaderWrapper variants={containerVariants} initial="hidden" animate="visible">
         <TextSection>
-          <Title>
+          <Title variants={itemVariants}>
             Buy and sell at your target <br />
             <Highlight>price.</Highlight>
           </Title>
         </TextSection>
-
-        <ContainerCard>
+        <ContainerCard variants={itemVariants}>
           <Description>
-            Busy schedules can lead to missed opportunities. Execute trades using <b>Target Price Swap to buy or sell</b> at your specified price automatically.
+            Busy schedules can lead to missed opportunities. Execute trades using <b>Target Price Swap</b> to buy or sell at your specified price automatically.
           </Description>
         </ContainerCard>
       </HeaderWrapper>
 
-      <ExchangeIconBox>
-        <Miniiconbox>
-          <Iconbox>
-            <MyIcon1 />
-            <Myparagraph>Earn interest on assets in active orders while awaiting execution.</Myparagraph>
-          </Iconbox>
-          <Iconbox>
-            <MyIcon2 />
-            <Myparagraph>Your order will be executed in full at the exact price you’ve set.</Myparagraph>
-          </Iconbox>
-        </Miniiconbox>
+      <ExchangeIconBox variants={containerVariants} initial="hidden" animate="visible">
+        <MiniIconBox>
+          <IconBox variants={itemVariants}>
+            <IconWrapper>
+              <FaArrowUpRightFromSquare />
+            </IconWrapper>
+            <MyParagraph>Earn interest on assets in active orders while awaiting execution.</MyParagraph>
+          </IconBox>
+          <IconBox variants={itemVariants}>
+            <IconWrapper>
+              <SiCircle />
+            </IconWrapper>
+            <MyParagraph>Your order will be executed in full at the exact price you’ve set.</MyParagraph>
+          </IconBox>
+        </MiniIconBox>
       </ExchangeIconBox>
 
-      <HeaderWrapper>
+      <HeaderWrapper variants={containerVariants} initial="hidden" animate="visible">
         <TextSection>
-          <Title>
+          <Title variants={itemVariants}>
             Buy up to 3x more crypto.<br />
           </Title>
         </TextSection>
-
-        <ContainerCard>
+        <ContainerCard variants={itemVariants}>
           <Description>
-            Save time by automatically borrowing against your portfolio and buying more crypto in one go with the Syzyky Booster.
+            Save time by automatically borrowing against your portfolio and buying more crypto in one go with the <b>Syzyky Booster</b>.
           </Description>
         </ContainerCard>
       </HeaderWrapper>
 
-      <ExchangeIconBox>
-        <Miniiconbox>
-          <Iconbox>
-            <MyIcon3 />
-            <Myparagraph>Finance the purchase through a flexible Credit Line you can repay anytime.</Myparagraph>
-          </Iconbox>
-          <Iconbox>
-            <MyIcon4 />
-            <Myparagraph>Manage the risk on your boosted positions more effectively with take profit and stop loss orders.</Myparagraph>
-          </Iconbox>
-        </Miniiconbox>
+      <ExchangeIconBox variants={containerVariants} initial="hidden" animate="visible">
+        <MiniIconBox>
+          <IconBox variants={itemVariants}>
+            <IconWrapper>
+              <PiHandCoins />
+            </IconWrapper>
+            <MyParagraph>Finance the purchase through a flexible Credit Line you can repay anytime.</MyParagraph>
+          </IconBox>
+          <IconBox variants={itemVariants}>
+            <IconWrapper>
+              <BiSolidOffer />
+            </IconWrapper>
+            <MyParagraph>Manage the risk on your boosted positions more effectively with take profit and stop loss orders.</MyParagraph>
+          </IconBox>
+        </MiniIconBox>
       </ExchangeIconBox>
-
-
-    </>
+    </SectionWrapper>
   );
 };
 
