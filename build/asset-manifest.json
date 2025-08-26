@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.65c8d371.css",
-    "main.js": "/static/js/main.d54ad02a.js",
+    "main.js": "/static/js/main.ed2a284e.js",
     "static/media/People2.png": "/static/media/People2.8f724623ce8082b46fbd.png",
     "static/media/WealthGenImg.jpg": "/static/media/WealthGenImg.4cd967de1c6657cb7eb7.jpg",
     "static/media/a044da49.png": "/static/media/ffebca516cac6ee61afd0a054afa5dd4a044da49.069fb5237358b3c3a11a.png",
@@ -9,6 +9,7 @@
     "static/media/Phone-Mockup.png": "/static/media/Phone-Mockup.c309c11a4e12869b32cc.png",
     "static/media/MidMobile11.jpg": "/static/media/MidMobile11.cde32d29fdaeaa778e63.jpg",
     "static/media/double-hand.png": "/static/media/double-hand.ecd6842d7427c5d8c9bc.png",
+    "static/media/Container(1).png": "/static/media/Container(1).bd65a3b9351530576d01.png",
     "static/media/midMobile.png": "/static/media/midMobile.cf0794a9152371ea5a08.png",
     "static/media/icon1.png": "/static/media/icon1.601e55076a4189c27d03.png",
     "static/media/logo_hr.png": "/static/media/logo_hr.b254b8ccdfa6aaad9b51.png",
@@ -18,10 +19,10 @@
     "static/media/CardBanner.png": "/static/media/CardBanner.c8abfa7fa37dbbb2d4d2.png",
     "index.html": "/index.html",
     "main.65c8d371.css.map": "/static/css/main.65c8d371.css.map",
-    "main.d54ad02a.js.map": "/static/js/main.d54ad02a.js.map"
+    "main.ed2a284e.js.map": "/static/js/main.ed2a284e.js.map"
   },
   "entrypoints": [
     "static/css/main.65c8d371.css",
-    "static/js/main.d54ad02a.js"
+    "static/js/main.ed2a284e.js"
   ]
 }

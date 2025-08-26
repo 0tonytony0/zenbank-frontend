@@ -11,7 +11,6 @@ const Container = styled.div`
 `;
 
 const TitleWrapper = styled.div`
-  background: #fff;
   width: 80%;
   max-width: 500px;
   padding: 20px 10px;
