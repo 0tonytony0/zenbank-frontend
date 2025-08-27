@@ -4,7 +4,6 @@ import Banner from "../Personal/Banner";
 import WealthGenerationComponent from "../sections/WealthGEneration";
 import FundamentalsComponent from "../sections/Fundamentals";
 import styled from 'styled-components';
-// import LoyaltyBanner from '../../assets/Loyality.png';
 import syzykyBanner from '../../assets/logo_hr.png'
 import Cryptomarket from "./Cryptomarket";
 

@@ -2,9 +2,8 @@
   "name": "ai-landing",
   "version": "0.1.0",
   "private": true,
-  "dependencies": { 
+  "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
-    "@react-icons/all-files": "^4.1.0", 
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.3.0",
     "@testing-library/user-event": "^13.5.0",
@@ -17,7 +16,7 @@
     "react-router-dom": "^6.26.2",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.3",
-    "recharts": "^2.15.3", 
+    "recharts": "^2.15.3",
     "styled-components": "^6.1.18",
     "web-vitals": "^2.1.4"
   },
@@ -44,10 +43,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "autoprefixer": "^10.4.16",
-    "postcss": "^8.4.38",
-    "tailwindcss": "^3.4.4"
   }
 }

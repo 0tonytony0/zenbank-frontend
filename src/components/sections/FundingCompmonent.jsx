@@ -3,7 +3,6 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import Container from '../ui/Container';
-// import LoyaltyBanner from '../../assets/Loyality.png';
 
 const Wrapper = styled.section`
   padding: ${({ theme }) => theme.spacing.xxl} 0;
