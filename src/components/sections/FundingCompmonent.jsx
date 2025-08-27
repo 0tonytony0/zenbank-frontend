@@ -88,19 +88,6 @@ const CardDescription = styled.p`
   margin: 0;
 `;
 
-const BannerWrapper = styled.div`
-  margin-top: ${({ theme }) => theme.spacing.xxl};
-  width: 100%;
-  border-radius: ${({ theme }) => theme.borderRadius.medium};
-  overflow: hidden;
-`;
-
-const BannerImage = styled.img`
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: ${({ theme }) => theme.borderRadius.medium};
-`;
 
 const FundingComponent = () => {
   return (

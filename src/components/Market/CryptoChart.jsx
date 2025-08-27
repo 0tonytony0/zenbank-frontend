@@ -1,17 +1,20 @@
 import React from "react";
 import styled from "styled-components";
-import { ArrowUpRight, ArrowDownRight } from "lucide-react"; 
-import ETH from '../../assets/currency-ethereum.svg fill.png'
-import SOL from '../../assets/Solana-Icon,Buy-Solana-(SOL).png'
-import XRP from '../../assets/currency-xrp.svg fill.png' 
-import USDT from '../../assets/currency-usdt-1.svg fill.png'
-import USDC from '../../assets/currency-usdc-1.svg fill.png' 
-import DOGE from '../../assets/currency-dogecoin-1.svg fill.png'
-import PAXG from '../../assets/currency-paxg-3.svg fill.png'
-import SUI from '../../assets/currency-sui.svg fill.png'
+import { ArrowUpRight, ArrowDownRight } from "lucide-react";  
 import { LineChart, Line, ResponsiveContainer } from "recharts"; 
 import { Column } from "./MarketHeaderRow";
 
+
+
+
+const SUI="https://cdn-icons-png.flaticon.com/128/15208/15208164.png"
+const PAXG="https://www.shutterstock.com/shutterstock/photos/2159987341/display_1500/stock-vector-pax-gold-paxg-coin-isolated-on-white-background-cryptocurrency-blockchain-crypto-currency-2159987341.jpg"
+const USDT = "https://cdn-icons-png.flaticon.com/128/14446/14446252.png";
+const USDC = "https://cdn-icons-png.flaticon.com/128/14446/14446284.png";
+const XRP="https://cdn-icons-png.flaticon.com/128/6557/6557113.png"
+const SOL ="https://cdn-icons-png.flaticon.com/128/12114/12114239.png"
+const ETH ="https://files.coinswitch.co/public/coins/eth.png"
+const DOGE="https://c8.alamy.com/comp/M8CXG7/crypto-currency-dogecoin-golden-symbol-M8CXG7.jpg"
 const ADA = "https://cdn4.iconfinder.com/data/icons/crypto-currency-and-coin-2/256/cardano_ada-512.png";
 
 const BIT = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaSEEUJQPS_ARZeaL2PTiA5K0qDjwFzMoVQA&s";

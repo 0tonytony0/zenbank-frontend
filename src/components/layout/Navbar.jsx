@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import Container from "../ui/Container";
 import Logo from "../ui/Logo";
-import Button from "../ui/Button";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 

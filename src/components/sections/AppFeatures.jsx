@@ -28,18 +28,7 @@ const Header = styled.div`
   }
 `;
 
-const Quote = styled.div`
-  font-size: 4rem;
-  color: ${({ theme }) => theme.colors.primary || '#4facfe'};
-  margin-right: 1.5rem;
-  font-weight: bold;
-  line-height: 1;
 
-  @media (max-width: 767px) {
-    margin-bottom: 1rem;
-    margin-right: 0;
-  }
-`;
 
 const TitleWrapper = styled.div`
   flex: 1;

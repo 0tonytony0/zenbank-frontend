@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
-import EstimateBoxImg from '../../assets/Container(1).png';
 import CurrencyUSD from '../../assets/currency-usd-flag.svg fill.png';
 
 // Theme object (same as Payments for consistency)
@@ -315,25 +314,6 @@ const LearnMoreButton = styled.button`
   }
 `;
 
-const LastImage = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: ${theme.spacing.lg};
-
-  img {
-    width: 100%;
-    max-width: clamp(200px, 50vw, 400px);
-    height: auto;
-    border-radius: ${theme.borderRadius.large};
-    box-shadow: ${theme.shadows.large};
-  }
-
-  @media (min-width: ${theme.breakpoints.laptop}) {
-    img {
-      max-width: 600px;
-    }
-  }
-`;
 
 const EstimateEarning = () => {
   const [amount, setAmount] = useState(50000);

@@ -94,10 +94,7 @@ const pulse = keyframes`
   50% { opacity: 0.3; transform: scale(1.05); }
 `;
 
-const slideInUp = keyframes`
-  from { transform: translateY(50px); opacity: 0; }
-  to { transform: translateY(0); opacity: 1; }
-`;
+
 
 const slideInLeft = keyframes`
   from { transform: translateX(-50px); opacity: 0; }

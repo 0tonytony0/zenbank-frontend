@@ -2,11 +2,11 @@
 import React from "react";
 import { FaCaretDown, FaCaretUp } from "react-icons/fa";
 import styled from "styled-components";
-import XRP from '../../assets/Ripple-(XRP)-cryptocurrency-icon.png';
-import KSM from '../../assets/currency-ksm.svg.png'; 
 import Chart1 from '../../assets/Vector1.png';
 
 
+const KSM="https://cdn-icons-png.flaticon.com/128/10464/10464577.png"
+const XRP="https://cdn-icons-png.flaticon.com/128/1490/1490820.png"
 const ASX = "https://thumbs.dreamstime.com/b/axie-infinity-axs-token-icon-isolated-white-background-228539600.jpg";
 // Styled Components
 const CryptoBox = styled.div`
