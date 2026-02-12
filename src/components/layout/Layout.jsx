@@ -20,17 +20,6 @@ const Layout = ({ children }) => {
   );
 };
 
-// const Layout = ({ children }) => {
-//   return (
-//     <>
-//       <Navbar />
-//       <Main>
-//         {children}
-//         <Outlet />
-//       </Main>
-//       <Footer />
-//     </>
-//   );
-// };
+
 
 export default Layout;

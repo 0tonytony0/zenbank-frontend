@@ -102,9 +102,9 @@ const Company = () => {
     <Container>
       <Header className="px-4 py-6 md:px-10 md:py-15 ">
         <ContentWrapper>
-          <h1 style={{ color: '#0ea5e9' }}>About Syzyky</h1>
+          <h1 style={{ color: '#0ea5e9' }}>About Zenbank</h1>
           <p style={{ color: "white" }} className="text-sm md:text-base text-gray-700 leading-relaxed">
-            <strong>Syzyky</strong> is a modern AI-driven platform helping
+            <strong>Zenbank</strong> is a modern AI-driven platform helping
             users and developers integrate intelligent features into their websites and apps seamlessly.
             We specialize in chatbots, image generation, and automation tools using OpenAI’s APIs.
           </p>
@@ -291,12 +291,12 @@ const Company = () => {
           <SubHeading>📬 Contact</SubHeading>
           <p>
             Email:{" "}
-            <ContactLink href="mailto:contact@syzyky.io">contact@syzyky.io</ContactLink>
+            <ContactLink href="mailto:contact@Zenbank.io">contact@Zenbank.io</ContactLink>
           </p>
           <p>
             LinkedIn:{" "}
             <ContactLink href="https://www.linkedin.com/in/nikhilverma6/">
-              /syzyky
+              /Zenbank
             </ContactLink>
           </p>
         </ContentWrapper>

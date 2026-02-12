@@ -1,5 +1,5 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
 // Styled Components
 const Container = styled.div`
@@ -12,11 +12,12 @@ const Container = styled.div`
     rgba(255, 255, 255, 0.1) 0%,
     rgba(255, 255, 255, 0.05) 100%
   );
-  color: 'white',
-  font-family: Arial, sans-serif;
+  color: ${({ theme }) => theme.colors.text};
+  font-family: ${({ theme }) => theme.fonts.primary};
   max-width: 1200px;
   margin: 0 auto;
-  gap: 40px;
+  gap: 50px;
+  margin-bottom: 50px;
 
   @media (max-width: 992px) {
     flex-direction: column;
@@ -28,7 +29,7 @@ const Container = styled.div`
 const TextSection = styled.div`
   flex: 1;
   padding-right: 40px;
-  color: 'white',
+  color: ${({ theme }) => theme.colors.text};
 
   @media (max-width: 992px) {
     padding-right: 0;
@@ -38,7 +39,7 @@ const TextSection = styled.div`
 const Title = styled.h2`
   font-size: 38px;
   font-weight: bold;
-  color: 'white';
+  color: ${({ theme }) => theme.colors.text};
   margin-bottom: 20px;
 
   @media (max-width: 768px) {
@@ -109,7 +110,7 @@ const StatText = styled.div`
 const StatNumber = styled.h3`
   font-size: 28px;
   font-weight: bold;
-  color: 'white';
+  color: ${({ theme }) => theme.colors.text};
   margin: 0;
 
   @media (max-width: 768px) {
@@ -142,7 +143,8 @@ const FundamentalsComponent = () => {
       <TextSection>
         <Title>Strong fundamentals support your assets.</Title>
         <Subtitle>
-          We put our clients first by providing a robust infrastructure, designed to sustain your long-term wealth growth.
+          We put our clients first by providing a robust infrastructure,
+          designed to sustain your long-term wealth growth.
         </Subtitle>
       </TextSection>
       <StatsSection>
@@ -150,7 +152,9 @@ const FundamentalsComponent = () => {
           <Icon>📈</Icon>
           <StatText>
             <StatNumber>$320+ billion</StatNumber>
-            <StatDescription>in transaction volume and collateralised credit issued</StatDescription>
+            <StatDescription>
+              in transaction volume and collateralised credit issued
+            </StatDescription>
           </StatText>
         </Stat>
         <Stat>

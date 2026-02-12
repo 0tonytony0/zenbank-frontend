@@ -54,7 +54,7 @@ const PerAnnual = () => {
               <div className="innerBitcoin">
                 <img src={CurrencyNXO} alt="NEXO" style={{ height: "45px", width: "45px" }} />
                 <p>
-                  Up to <b><strong className="strongPer">4%</strong></b><br /> on Syzyky
+                  Up to <b><strong className="strongPer">4%</strong></b><br /> on Zenbank
                 </p>
               </div>
               <div className="innerBitcoin"><CiSquarePlus size={40} /></div>

@@ -3,75 +3,7 @@ import styled from 'styled-components';
 import { ArrowRight } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 import CurrencyUSD from '../../assets/currency-usd-flag.svg fill.png';
-
-// Theme object (same as Payments for consistency)
-const theme = {
-  colors: {
-    primary: '#4361ee',
-    secondary: '#3f37c9',
-    accent: '#4cc9f0',
-    text: '#d1d5db',
-    textLight: '#9ca3af',
-    background: '#0d0d2b', // Dark blue background
-    backgroundAlt: '#1e1e4a', // Slightly lighter dark blue
-    border: '#4b5563',
-    success: '#4BB543',
-    error: '#FF3333',
-    dark: '#111827',
-    darker: '#030712',
-    inverse: '#ffffff',
-    pink: '#ec4899',
-    purple: '#7c3aed',
-  },
-  fonts: {
-    main: "'Poppins', sans-serif",
-    heading: "'Montserrat', sans-serif",
-    mono: "'JetBrains Mono', 'Monaco', 'Menlo', monospace",
-  },
-  fontSizes: {
-    small: '0.875rem',
-    regular: '1rem',
-    medium: '1.25rem',
-    large: '1.5rem',
-    xlarge: '2rem',
-    xxlarge: '3rem',
-  },
-  breakpoints: {
-    mobile: '576px',
-    tablet: '768px',
-    laptop: '992px',
-    desktop: '1200px',
-  },
-  spacing: {
-    xs: '0.5rem',
-    sm: '1rem',
-    md: '1.5rem',
-    lg: '2rem',
-    xl: '3rem',
-    xxl: '5rem',
-  },
-  borderRadius: {
-    small: '4px',
-    medium: '8px',
-    large: '16px',
-    round: '50%',
-    '2xl': '24px',
-  },
-  shadows: {
-    small: '0 2px 4px rgba(0, 0, 0, 0.2)',
-    medium: '0 4px 8px rgba(0, 0, 0, 0.2)',
-    large: '0 8px 16px rgba(0, 0, 0, 0.2)',
-    xl: '0 20px 25px -5px rgba(0, 0, 0, 0.2), 0 10px 10px -5px rgba(0, 0, 0, 0.04)',
-    glow: '0 0 40px rgba(79, 70, 229, 0.4)',
-    glowPink: '0 0 40px rgba(236, 72, 153, 0.4)',
-    '2xl': '0 25px 50px -12px rgba(0, 0, 0, 0.3)',
-  },
-  transitions: {
-    fast: '0.2s ease',
-    medium: '0.3s ease',
-    slow: '0.5s ease',
-  },
-};
+import { theme } from '../../styles/theme';
 
 // Styled Components
 const Container = styled.div`
@@ -83,7 +15,7 @@ const Container = styled.div`
 
 const EstimateBox = styled.div`
   max-width: 1200px;
-  margin: 0 auto ${theme.spacing.lg};
+  margin: 0 auto ${theme.spacing.lg};s
   text-align: center;
   color: ${theme.colors.inverse};
 
@@ -323,7 +255,7 @@ const EstimateEarning = () => {
     <Container>
       <EstimateBox>
         <h1>Estimate your earnings.</h1>
-        <p>Compare your potential earnings with Syzyky Flexible Savings to alternative yield options.</p>
+        <p>Compare your potential earnings with Zenbank Flexible Savings to alternative yield options.</p>
       </EstimateBox>
 
       <SavingsContainer>
@@ -362,14 +294,14 @@ const EstimateEarning = () => {
         </SliderGroup>
 
         {/* Start Earning Button */}
-        <StartButton aria-label="Start earning with Syzyky" onClick={() => navigate('/start_earning')}>
+        <StartButton aria-label="Start earning with Zenbank" onClick={() => navigate('/start_earning')}>
           Start earning
         </StartButton>
 
         {/* Fixed-Term Savings Info */}
         <InfoBox>
           <p>
-            Choose Syzyky <strong>Fixed-term Savings</strong> and enjoy higher
+            Choose Zenbank <strong>Fixed-term Savings</strong> and enjoy higher
             interest rates for a set term. Discover how much you can earn.
           </p>
           <LearnMoreButton aria-label="Learn more about Fixed-term Savings" onClick={() => navigate('/fixed_term_savings')}>
@@ -379,7 +311,7 @@ const EstimateEarning = () => {
       </SavingsContainer>
 
       {/* <LastImage>
-        <img src={EstimateBoxImg} alt="Syzyky Savings Illustration" />
+        <img src={EstimateBoxImg} alt="Zenbank Savings Illustration" />
       </LastImage> */}
     </Container>
   );

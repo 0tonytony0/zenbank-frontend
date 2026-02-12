@@ -904,12 +904,12 @@ export default function PaymentApp() {
   return (
     <HeroWrapper>
       <GridOverlay />
-      
+
       {/* Floating Background Elements */}
       <FloatingElement className="element-1" />
       <FloatingElement className="element-2" />
       <FloatingElement className="element-3" />
-      
+
       <ContentGrid>
         {/* Left Content */}
         <HeroText>
@@ -917,18 +917,19 @@ export default function PaymentApp() {
             <ZapIcon />
             AI-Powered Crypto Payments
           </Badge>
-          
+
           <MainHeading>
             SPEND
             <span className="gradient-text">CRYPTO</span>
             LIKE FIAT
           </MainHeading>
-          
+
           <Description>
-            Experience the future of payments with SyZyKy Pay. Lightning-fast transactions, 
-            military-grade security, and seamless crypto-to-fiat conversion.
+            Experience the future of payments with Zenbank Pay. Lightning-fast
+            transactions, military-grade security, and seamless crypto-to-fiat
+            conversion.
           </Description>
-          
+
           <FeaturePills>
             <FeaturePill>
               <ShieldIcon />
@@ -943,36 +944,36 @@ export default function PaymentApp() {
               Real-time Rates
             </FeaturePill>
           </FeaturePills>
-          
+
           <CTAContainer>
             <DownloadButtonWrapper ref={downloadRef}>
-              <PrimaryButton 
+              <PrimaryButton
                 onClick={handleDownloadClick}
-                className={showDownloadMenu ? 'active' : ''}
+                className={showDownloadMenu ? "active" : ""}
               >
                 <DownloadIcon />
                 Download App
                 <ArrowRightIcon />
               </PrimaryButton>
-              
-              <DropdownMenu className={showDownloadMenu ? 'active' : ''}>
-                <DropdownItem onClick={() => handlePlatformClick('ios')}>
+
+              <DropdownMenu className={showDownloadMenu ? "active" : ""}>
+                <DropdownItem onClick={() => handlePlatformClick("ios")}>
                   <AppleIcon />
                   <div className="text">
                     <div className="title">App Store</div>
                     <div className="subtitle">Download for iPhone</div>
                   </div>
                 </DropdownItem>
-                
-                <DropdownItem onClick={() => handlePlatformClick('android')}>
+
+                <DropdownItem onClick={() => handlePlatformClick("android")}>
                   <GooglePlayIcon />
                   <div className="text">
                     <div className="title">Google Play</div>
                     <div className="subtitle">Download for Android</div>
                   </div>
                 </DropdownItem>
-                
-                <DropdownItem onClick={() => handlePlatformClick('apk')}>
+
+                <DropdownItem onClick={() => handlePlatformClick("apk")}>
                   <AndroidIcon />
                   <div className="text">
                     <div className="title">Android APK</div>
@@ -981,13 +982,13 @@ export default function PaymentApp() {
                 </DropdownItem>
               </DropdownMenu>
             </DownloadButtonWrapper>
-            
+
             <SecondaryButton>
               <SmartphoneIcon />
               Try Demo
             </SecondaryButton>
           </CTAContainer>
-          
+
           <StatsContainer>
             {stats.map((stat, index) => (
               <StatItem key={index}>
@@ -997,12 +998,12 @@ export default function PaymentApp() {
             ))}
           </StatsContainer>
         </HeroText>
-        
+
         {/* Right Side - Phone Mockup */}
         <PhoneMockupContainer>
           <FloatingDecor className="decor-1" />
           <FloatingDecor className="decor-2" />
-          
+
           <PhoneContainer>
             <PhoneScreen>
               <StatusBar>
@@ -1013,30 +1014,30 @@ export default function PaymentApp() {
                   </div>
                 </div>
               </StatusBar>
-              
+
               <BalanceSection>
                 <div className="label">Total Balance</div>
-                <div className="amount">${currentBalance.toLocaleString()}.00</div>
-                
+                <div className="amount">
+                  ${currentBalance.toLocaleString()}.00
+                </div>
+
                 <ActionButtons>
                   <button className="primary">Send</button>
                   <button className="secondary">Receive</button>
                 </ActionButtons>
               </BalanceSection>
-              
+
               <AssetsSection>
                 <div className="header">
                   <h3>Assets</h3>
                   <button>View All</button>
                 </div>
-                
+
                 <TokenList>
                   {tokens.map((token, index) => (
                     <TokenItem key={index}>
                       <div className="token-info">
-                        <div className="icon">
-                          {token.symbol.slice(0, 2)}
-                        </div>
+                        <div className="icon">{token.symbol.slice(0, 2)}</div>
                         <div className="details">
                           <div className="symbol">{token.symbol}</div>
                           <div className="change">{token.change}</div>
@@ -1047,7 +1048,7 @@ export default function PaymentApp() {
                   ))}
                 </TokenList>
               </AssetsSection>
-              
+
               <ActivitySection>
                 <div className="header">Recent Activity</div>
                 <ActivityList>

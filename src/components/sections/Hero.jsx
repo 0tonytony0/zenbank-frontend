@@ -127,7 +127,7 @@ const Hero = () => (
         Experience secure, instant, and zero-fee transfers globally with AI-powered financial control.
       </SubText>
       <ButtonGroup>
-        <Button>Get Started</Button>
+        <Button variant="blue">Get Started</Button>
         <Button variant="green">Download App</Button>
         <Button variant="blue">Watch How It Works</Button>
       </ButtonGroup>

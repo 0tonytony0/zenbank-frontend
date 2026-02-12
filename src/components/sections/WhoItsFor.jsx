@@ -3,10 +3,10 @@ import styled from 'styled-components';
 
 // Styled Components
 const Container = styled.div`
-  background: ""#0D0D2B";
-  margin-top: "1rem";
+  background: ${({ theme }) => theme.colors.background};
+  margin-top: 1rem;
   padding: 60px 20px;
-  font-family: Arial, sans-serif;
+  font-family: ${({ theme }) => theme.fonts.primary};
   text-align: center;
 `;
 
@@ -16,7 +16,7 @@ const TitleWrapper = styled.div`
   padding: 20px 10px;
   border-radius: 12px;
   margin: 0 auto 40px auto;
-  margin-bottom: "1rem";
+  margin-bottom: 1rem;
 
   @media (max-width: 768px) {
     width: 90%;
@@ -32,7 +32,7 @@ const TitleWrapper = styled.div`
 const Title = styled.h2`
   font-size: 36px;
   font-weight: bold;
-  color: white;
+  color: ${({ theme }) => theme.colors.text};
   margin: 0;
 
   @media (max-width: 768px) {
@@ -47,9 +47,9 @@ const Title = styled.h2`
 const SubTitle = styled.h3`
   font-size: 20px;
   padding-bottom: 10px;
-  color: ${({ theme }) => `${theme.colors.textLight}150`};
+  color: ${({ theme }) => theme.colors.textSecondary};
   margin: 10px 0 0;
-  margin-bottom : "1rem";
+  margin-bottom: 1rem;
   font-weight: 500;
 
   @media (max-width: 768px) {
@@ -73,9 +73,9 @@ const CardGrid = styled.div`
 
 const Card = styled.div`
   background: linear-gradient(
-      135deg,
-      rgba(79, 172, 254, 0.2) 0%,
-      rgba(142, 68, 173, 0.2) 100%
+    135deg,
+    rgba(79, 172, 254, 0.2) 0%,
+    rgba(142, 68, 173, 0.2) 100%
   );
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);

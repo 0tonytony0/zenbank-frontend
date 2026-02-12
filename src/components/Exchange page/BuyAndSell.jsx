@@ -203,7 +203,11 @@ const itemVariants = {
 const BuyAndSellSelection = () => {
   return (
     <SectionWrapper>
-      <HeaderWrapper variants={containerVariants} initial="hidden" animate="visible">
+      <HeaderWrapper
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <TextSection>
           <Title variants={itemVariants}>
             Buy and sell at your target <br />
@@ -212,54 +216,80 @@ const BuyAndSellSelection = () => {
         </TextSection>
         <ContainerCard variants={itemVariants}>
           <Description>
-            Busy schedules can lead to missed opportunities. Execute trades using <b>Target Price Swap</b> to buy or sell at your specified price automatically.
+            Busy schedules can lead to missed opportunities. Execute trades
+            using <b>Target Price Swap</b> to buy or sell at your specified
+            price automatically.
           </Description>
         </ContainerCard>
       </HeaderWrapper>
 
-      <ExchangeIconBox variants={containerVariants} initial="hidden" animate="visible">
+      <ExchangeIconBox
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <MiniIconBox>
           <IconBox variants={itemVariants}>
             <IconWrapper>
               <FaArrowUpRightFromSquare />
             </IconWrapper>
-            <MyParagraph>Earn interest on assets in active orders while awaiting execution.</MyParagraph>
+            <MyParagraph>
+              Earn interest on assets in active orders while awaiting execution.
+            </MyParagraph>
           </IconBox>
           <IconBox variants={itemVariants}>
             <IconWrapper>
               <SiCircle />
             </IconWrapper>
-            <MyParagraph>Your order will be executed in full at the exact price you’ve set.</MyParagraph>
+            <MyParagraph>
+              Your order will be executed in full at the exact price you’ve set.
+            </MyParagraph>
           </IconBox>
         </MiniIconBox>
       </ExchangeIconBox>
 
-      <HeaderWrapper variants={containerVariants} initial="hidden" animate="visible">
+      <HeaderWrapper
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <TextSection>
           <Title variants={itemVariants}>
-            Buy up to 3x more crypto.<br />
+            Buy up to 3x more crypto.
+            <br />
           </Title>
         </TextSection>
         <ContainerCard variants={itemVariants}>
           <Description>
-            Save time by automatically borrowing against your portfolio and buying more crypto in one go with the <b>Syzyky Booster</b>.
+            Save time by automatically borrowing against your portfolio and
+            buying more crypto in one go with the <b>Zenbank Booster</b>.
           </Description>
         </ContainerCard>
       </HeaderWrapper>
 
-      <ExchangeIconBox variants={containerVariants} initial="hidden" animate="visible">
+      <ExchangeIconBox
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <MiniIconBox>
           <IconBox variants={itemVariants}>
             <IconWrapper>
               <PiHandCoins />
             </IconWrapper>
-            <MyParagraph>Finance the purchase through a flexible Credit Line you can repay anytime.</MyParagraph>
+            <MyParagraph>
+              Finance the purchase through a flexible Credit Line you can repay
+              anytime.
+            </MyParagraph>
           </IconBox>
           <IconBox variants={itemVariants}>
             <IconWrapper>
               <BiSolidOffer />
             </IconWrapper>
-            <MyParagraph>Manage the risk on your boosted positions more effectively with take profit and stop loss orders.</MyParagraph>
+            <MyParagraph>
+              Manage the risk on your boosted positions more effectively with
+              take profit and stop loss orders.
+            </MyParagraph>
           </IconBox>
         </MiniIconBox>
       </ExchangeIconBox>

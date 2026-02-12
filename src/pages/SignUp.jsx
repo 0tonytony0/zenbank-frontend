@@ -1,8 +1,15 @@
 import React, { useState } from "react";
-import styled from "styled-components";
+import styled, { ThemeProvider } from "styled-components";
+import theme from "../styles/theme";
 import { Link, useNavigate } from "react-router-dom";
 import { signupUser } from "../api/SignUpApi";
 import { FaEye, FaEyeSlash } from "react-icons/fa";
+
+const ErrorMessage = styled.p`
+  color: ${({ theme }) => theme.colors.error};
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+`;
 
 const Container = styled.div`
   display: flex;
@@ -10,8 +17,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  font-family: 'Poppins', sans-serif; 
-  background: #0D0D2B; /* Dark navy background */
+  font-family: "Poppins", sans-serif;
+  background: ${({ theme }) => theme.colors.background};
   padding: 20px;
 `;
 
@@ -35,13 +42,13 @@ const Input = styled.input`
   width: 100%;
   padding: 12px 15px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid ${({ theme }) => theme.colors.border};
   border-radius: 8px;
   font-size: 1rem;
   outline: none;
 
   &:focus {
-    border-color: #11998e;
+    border-color: ${({ theme }) => theme.colors.accent};
   }
 `;
 
@@ -56,14 +63,19 @@ const Button = styled.button`
   color: white;
 
   /* Gradient Background */
-  background: linear-gradient(90deg, #4facfe 0%, #8e44ad 100%);
-  box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
+  background: linear-gradient(
+    90deg,
+    ${({ theme }) => theme.colors.primary} 0%,
+    ${({ theme }) => theme.colors.accent} 100%
+  );
+  box-shadow: ${({ theme }) => theme.shadows.glow};
 
   transition: all 0.3s ease;
 
   &:hover {
-    box-shadow: 0 0 20px rgba(79, 172, 254, 0.8),
-                0 0 40px rgba(142, 68, 173, 0.8);
+    box-shadow:
+      0 0 20px rgba(79, 172, 254, 0.8),
+      0 0 40px rgba(142, 68, 173, 0.8);
     transform: translateY(-2px);
   }
 
@@ -73,7 +85,7 @@ const Button = styled.button`
 `;
 
 const LoginLink = styled(Link)`
-  color: #11998e;
+  color: ${({ theme }) => theme.colors.accent};
   text-decoration: none;
 
   &:hover {
@@ -84,7 +96,7 @@ const LoginLink = styled(Link)`
 const BackButton = styled.button`
   background: none;
   border: none;
-  color: #ccc;
+  color: ${({ theme }) => theme.colors.textLight};
   font-size: 1rem;
   cursor: pointer;
   margin-bottom: 20px;
@@ -118,9 +130,17 @@ const Signup = () => {
 
     try {
       setLoading(true);
-      const result = await signupUser({ fullName, email, password, confirmPassword });
+      const result = await signupUser({
+        fullName,
+        email,
+        password,
+        confirmPassword,
+      });
 
-      if (result.status === "success" || result.message?.toLowerCase().includes("created")) {
+      if (
+        result.status === "success" ||
+        result.message?.toLowerCase().includes("created")
+      ) {
         navigate("/login");
         setFullName("");
         setEmail("");
@@ -142,8 +162,20 @@ const Signup = () => {
         <BackButton onClick={() => navigate(-1)}>← Back</BackButton>
         <h2>Sign Up</h2>
         <form onSubmit={handleSignup}>
-          <Input type="text" placeholder="Full Name" value={fullName} onChange={(e) => setFullName(e.target.value)} required />
-          <Input type="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <Input
+            type="text"
+            placeholder="Full Name"
+            value={fullName}
+            onChange={(e) => setFullName(e.target.value)}
+            required
+          />
+          <Input
+            type="email"
+            placeholder="Email"
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+            required
+          />
 
           {/* Password Field */}
           <div style={{ position: "relative" }}>
@@ -166,8 +198,7 @@ const Signup = () => {
                 border: "none",
                 cursor: "pointer",
                 color: "#888",
-              }}
-            >
+              }}>
               {showPassword ? <FaEyeSlash size={18} /> : <FaEye size={18} />}
             </button>
           </div>
@@ -195,19 +226,24 @@ const Signup = () => {
                 color: "#888",
               }}
             >
-              {showConfirmPassword ? <FaEyeSlash size={18} /> : <FaEye size={18} />}
+              {showConfirmPassword ? (
+                <FaEyeSlash size={18} />
+              ) : (
+                <FaEye size={18} />
+              )}
             </button>
           </div>
 
-          {errorMessage && (
-            <p style={{ color: "red", marginBottom: "10px", fontSize: "0.9rem" }}>{errorMessage}</p>
-          )}
+          {errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>}
 
           <Button type="submit" disabled={loading}>
             {loading ? "Creating..." : "Create Account"}
           </Button>
-          <p style={{ textAlign: "center", marginTop: "15px"}}>
-            Already have an account? <LoginLink to="/login" style={{color: "#8A2BE2"}}>Log In</LoginLink>
+          <p style={{ textAlign: "center", marginTop: "15px" }}>
+            Already have an account?{" "}
+            <LoginLink to="/login" style={{ color: "#8A2BE2" }}>
+              Log In
+            </LoginLink>
           </p>
         </form>
       </FormWrapper>

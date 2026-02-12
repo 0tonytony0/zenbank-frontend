@@ -40,8 +40,7 @@ function App() {
           <Route path="/flexible-terms" element={<FlexibleTerm />} />
           <Route path="/dual-invest" element={<DualInvest />} />
           <Route path="/exchange" element={<Exchangepage />} />
-                    <Route path="/personals" element={<Personal />} />
-
+          <Route path="/personals" element={<Personal />} />
           <Route path="/card" element={<CardPage />} />
           <Route path="/payment" element={<Payments />} />
           <Route path="/app_download" element={<PaymentApp />} />

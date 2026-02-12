@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import bgImage from "../../assets/WealthSolution.png";
+import { theme } from "../../styles/theme";
 
 // Styled Components
 const Container = styled.div`
@@ -51,11 +52,12 @@ const Title = styled.h1`
   font-weight: bold;
   line-height: 1.3;
   max-width: 600px;
-
   @media (min-width: 768px) {
-    font-size: 48px;
+  font-size: 48px;
+  color: black;
   }
 `;
+
 
 const CardSection = styled.div`
   display: flex;
@@ -72,8 +74,8 @@ const CardSection = styled.div`
 const CardLeft = styled.div`
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.05) 100%
+    rgba(255, 255, 255, 0.8) 0%,
+    rgb(255, 255, 255) 100%
   );
   color: white;
   border-radius: 12px;
@@ -83,9 +85,16 @@ const CardLeft = styled.div`
 `;
 
 const CardRight = styled.div`
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.8) 0%,
+    rgb(255, 255, 255) 100%
+  );
+  color: white;
+  border-radius: 12px;
+  padding: 20px;
   flex: 1;
-  display: flex;
-  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 `;
 
 const Navigation = styled.div`
@@ -112,12 +121,14 @@ const CardTitle = styled.h3`
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
+  color: black;
 `;
 
 const CardDescription = styled.p`
   font-size: 14px;
   color: inherit;
   margin: 0;
+  color: black;
 `;
 
 // Component
@@ -142,11 +153,11 @@ const WealthSolutions = () => {
             <Navigation>
               <ArrowButton>←</ArrowButton>
               <div>
-                <CardTitle style={{ color: "white" }}>
+                <CardTitle>
                   Build your company's digital asset portfolio
                 </CardTitle>
-                <CardDescription style={{ color: "#ddd" }}>
-                  Grow your business through Syzyky’s OTC borrowing, lending, and
+                <CardDescription >
+                  Grow your business through Zenbank’s OTC borrowing, lending, and
                   trading desk with assistance from a dedicated relationship
                   manager.
                 </CardDescription>

@@ -176,21 +176,21 @@ export default function FAQ() {
   const faqData = [
     {
       id: 1,
-      question: 'How can I create an account on Syzyky?',
+      question: 'How can I create an account on Zenbank?',
       answer:
-        'To create an account on Syzyky, visit the official Syzyky website or download the mobile app, click on "Sign Up", provide your email address, create a secure password, complete the verification process by providing required documents for KYC, and finally set up your two-factor authentication for added security.',
+        'To create an account on Zenbank, visit the official Zenbank website or download the mobile app, click on "Sign Up", provide your email address, create a secure password, complete the verification process by providing required documents for KYC, and finally set up your two-factor authentication for added security.',
     },
     {
       id: 2,
       question: 'How do I start earning interest?',
       answer:
-        'To start earning interest, deposit your digital assets into your Syzyky account, choose your preferred interest earning method (either in-kind or in SyZyKy tokens for higher rates), and your assets will automatically begin accruing interest according to the applicable rates. Interest is typically calculated daily and paid out regularly.',
+        'To start earning interest, deposit your digital assets into your Zenbank account, choose your preferred interest earning method (either in-kind or in Zenbank tokens for higher rates), and your assets will automatically begin accruing interest according to the applicable rates. Interest is typically calculated daily and paid out regularly.',
     },
     {
       id: 3,
-      question: 'What cryptocurrencies can I buy and hold on Syzyky?',
+      question: 'What cryptocurrencies can I buy and hold on Zenbank?',
       answer:
-        'On Syzyky, you can buy and hold major cryptocurrencies like Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), and various stablecoins including USDT, USDC, and DAI. The platform also supports numerous altcoins and tokens, with the list of supported assets regularly expanding to include new and emerging cryptocurrencies.',
+        'On Zenbank, you can buy and hold major cryptocurrencies like Bitcoin (BTC), Ethereum (ETH), Litecoin (LTC), and various stablecoins including USDT, USDC, and DAI. The platform also supports numerous altcoins and tokens, with the list of supported assets regularly expanding to include new and emerging cryptocurrencies.',
     },
     {
       id: 4,

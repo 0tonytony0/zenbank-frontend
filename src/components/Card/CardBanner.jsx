@@ -167,7 +167,7 @@ const CardBanner = () => {
   return (
     <Container>
       <TopTxtContainer>
-        <LeftTitleBox>Tap into your crypto wealth with the Syzyky Card.</LeftTitleBox>
+        <LeftTitleBox>Tap into your crypto wealth with the Zenbank Card.</LeftTitleBox>
         <TextRightBox>
           <Title>Spend without selling your digital assets and get up to 2% crypto cashback.</Title>
           <SubText>with daily payouts and no lock-ups.</SubText>

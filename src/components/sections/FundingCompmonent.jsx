@@ -111,7 +111,7 @@ const FundingComponent = () => {
               <CardTitle>Crypto-friendly bank transfers</CardTitle>
             </CardTop>
             <CardDescription>
-              Your personal USD, EUR, and GBP accounts on Syzyky help you prevent blocked or delayed transactions that banks can impose on third-party transfers. Adding funds is fee-free for EUR and GBP transfers, and USD amounts over $5,000.
+              Your personal USD, EUR, and GBP accounts on Zenbank help you prevent blocked or delayed transactions that banks can impose on third-party transfers. Adding funds is fee-free for EUR and GBP transfers, and USD amounts over $5,000.
             </CardDescription>
           </Card>
 

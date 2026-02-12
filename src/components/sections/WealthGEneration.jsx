@@ -99,7 +99,7 @@ return (
         <TextSection>
             <Title>Driving the next generation of wealth.</Title>
             <Subtitle>
-                Syzyky is built for pioneers ready to leverage blockchain technology for wealth generation. Create your account today and get started.
+                Zenbank is built for pioneers ready to leverage blockchain technology for wealth generation. Create your account today and get started.
             </Subtitle>
             <SignInButton>
                 Sign in <span>→</span>

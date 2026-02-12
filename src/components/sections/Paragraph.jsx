@@ -72,8 +72,6 @@
 
 // export default Paragraph;
 
-
-
 import React from "react";
 import styled from "styled-components";
 import Container from "../ui/Container";
@@ -106,25 +104,25 @@ const DataBox = styled.div`
   padding: 24px 12px;
   font-size: 1.1rem;
   font-weight: 500;
-  color: #fff;
+  color: ${({ theme }) => theme.colors.text};
   display: flex;
   flex-direction: column;
   align-items: center;
 
   @media (max-width: 600px) {
-    width: 100%;       /* full width on mobile */
-    max-width: none;   /* remove restriction */
+    width: 100%; /* full width on mobile */
+    max-width: none; /* remove restriction */
   }
 `;
 
 const Label = styled.span`
-  color: #ffffff;
+  color: ${({ theme }) => theme.colors.text};
   font-weight: 500;
   font-size: 1rem;
 `;
 
 const Highlight = styled.span`
-  color: #0078d4;
+  color: ${({ theme }) => theme.colors.primary};
   font-weight: 700;
   font-size: 1.2rem;
   margin-top: 4px;

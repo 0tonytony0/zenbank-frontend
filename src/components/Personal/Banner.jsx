@@ -9,7 +9,7 @@ const Banner = (HeadingBanner) => {
     <>
       <div className="personalbox">
         <div className="titlBox">
-          <h1 style={{ marginLeft: '8%' }}>{HeadingBanner.Name}</h1>
+<h1 style={{ marginLeft: '8%' }}>{HeadingBanner.Name}</h1>
         </div>
         <div className="mainImgBox">
           <img src={BannerImg} alt="" className="mainMobileimg" />

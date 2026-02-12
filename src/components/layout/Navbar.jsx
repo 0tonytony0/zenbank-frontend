@@ -4,50 +4,7 @@ import Container from "../ui/Container";
 import Logo from "../ui/Logo";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
-
-// Modern Dark Blue Theme Colors
-const theme = {
-  colors: {
-    primary: "#1e3a8a", // Dark blue
-    primaryLight: "#3b82f6", // Lighter blue
-    secondary: "#1e293b", // Dark slate
-    accent: "#f59e0b", // Amber accent
-    accentLight: "#fef3c7", // Light amber
-    background: "#0f172a", // Very dark blue
-    surface: "#1e293b", // Card background
-    text: "#f8fafc", // Light text
-    textSecondary: "#cbd5e1", // Secondary text
-    textMuted: "#94a3b8", // Muted text
-    border: "#334155", // Border color
-    success: "#10b981",
-    warning: "#f59e0b",
-    error: "#ef4444",
-    white: "#ffffff",
-  },
-  shadows: {
-    small: "0 1px 3px 0 rgba(0, 0, 0, 0.1)",
-    medium: "0 4px 6px -1px rgba(0, 0, 0, 0.1)",
-    large: "0 10px 15px -3px rgba(0, 0, 0, 0.1)",
-    xl: "0 20px 25px -5px rgba(0, 0, 0, 0.1)",
-    glow: "0 0 20px rgba(59, 130, 246, 0.15)",
-  },
-  spacing: {
-    xs: "0.5rem",
-    sm: "0.75rem",
-    md: "1rem",
-    lg: "1.5rem",
-    xl: "2rem",
-  },
-  breakpoints: {
-    mobile: "480px",
-    tablet: "768px",
-    desktop: "1024px",
-  },
-  transitions: {
-    fast: "0.15s ease-out",
-    medium: "0.3s ease-out",
-  },
-};
+import { theme } from "../../styles/theme";
 
 // NavLink with modern styling
 const NavLink = styled.a`
@@ -66,9 +23,9 @@ const NavLink = styled.a`
 
   &:hover,
   &:focus {
-    color: ${theme.colors.accent};
-    background-color: rgba(245, 158, 11, 0.1);
-    outline: none;
+    color: ${theme.colors.text};
+    background-color: ${theme.colors.secondary};
+    outline: "rgba(30, 91, 184, 0.25)";
   }
 
   @media (max-width: ${theme.breakpoints.tablet}) {
@@ -86,8 +43,9 @@ const SubMenuWrapper = styled.div`
   position: absolute;
   top: calc(100% + 8px);
   left: 0;
-  background: linear-gradient(135deg, 
-    rgba(30, 41, 59, 0.95) 0%, 
+  background: linear-gradient(
+    135deg,
+    rgba(30, 41, 59, 0.95) 0%,
     rgba(15, 23, 42, 0.95) 50%,
     rgba(30, 58, 138, 0.9) 100%
   );
@@ -108,14 +66,15 @@ const SubMenuWrapper = styled.div`
   box-shadow: ${theme.shadows.xl}, ${theme.shadows.glow};
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, 
-      rgba(59, 130, 246, 0.05) 0%, 
+    background: linear-gradient(
+      135deg,
+      rgba(59, 130, 246, 0.05) 0%,
       rgba(245, 158, 11, 0.03) 100%
     );
     border-radius: 20px;
@@ -135,8 +94,9 @@ const SubMenuWrapper = styled.div`
     margin: ${theme.spacing.md} 0;
     padding: 0;
     border-radius: 12px;
-    background: linear-gradient(135deg, 
-      rgba(30, 41, 59, 0.95) 0%, 
+    background: linear-gradient(
+      135deg,
+      rgba(30, 41, 59, 0.95) 0%,
       rgba(15, 23, 42, 0.95) 100%
     );
     backdrop-filter: blur(8px);
@@ -147,8 +107,9 @@ const SubMenuWrapper = styled.div`
     flex-direction: column;
     box-shadow: ${theme.shadows.large};
     overflow: hidden;
-    
-    animation: ${({ isOpen }) => (isOpen ? "mobileSlideDown 0.3s ease-out" : "none")};
+
+    animation: ${({ isOpen }) =>
+      isOpen ? "mobileSlideDown 0.3s ease-out" : "none"};
 
     @keyframes mobileSlideDown {
       from {
@@ -207,13 +168,17 @@ const SubMenuSection = styled.div`
     position: relative;
 
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: -2px;
       left: 0;
       width: 40px;
       height: 2px;
-      background: linear-gradient(90deg, ${theme.colors.accent} 0%, transparent 100%);
+      background: linear-gradient(
+        90deg,
+        ${theme.colors.accent} 0%,
+        transparent 100%
+      );
     }
   }
 
@@ -236,8 +201,9 @@ const SubMenuItem = styled.div`
   border-radius: 16px;
   cursor: pointer;
   transition: all ${theme.transitions.medium};
-  background: linear-gradient(135deg, 
-    rgba(255, 255, 255, 0.03) 0%, 
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.03) 0%,
     rgba(59, 130, 246, 0.02) 100%
   );
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -247,14 +213,15 @@ const SubMenuItem = styled.div`
   height: auto;
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, 
-      rgba(59, 130, 246, 0.05) 0%, 
+    background: linear-gradient(
+      135deg,
+      rgba(59, 130, 246, 0.05) 0%,
       rgba(245, 158, 11, 0.02) 100%
     );
     opacity: 0;
@@ -263,13 +230,16 @@ const SubMenuItem = styled.div`
 
   &:hover,
   &:focus {
-    background: linear-gradient(135deg, 
-      rgba(59, 130, 246, 0.1) 0%, 
+    background: linear-gradient(
+      135deg,
+      rgba(59, 130, 246, 0.1) 0%,
       rgba(245, 158, 11, 0.05) 100%
     );
     border-color: rgba(59, 130, 246, 0.3);
     transform: translateY(-4px);
-    box-shadow: ${theme.shadows.large}, 0 8px 25px rgba(59, 130, 246, 0.1);
+    box-shadow:
+      ${theme.shadows.large},
+      0 8px 25px rgba(59, 130, 246, 0.1);
     outline: none;
 
     &::before {
@@ -309,8 +279,9 @@ const SubMenuItem = styled.div`
 
 // Mobile SubMenu Item Component
 const MobileSubMenuItem = styled.div`
-  background: linear-gradient(135deg, 
-    rgba(255, 255, 255, 0.05) 0%, 
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.05) 0%,
     rgba(59, 130, 246, 0.03) 100%
   );
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -321,8 +292,9 @@ const MobileSubMenuItem = styled.div`
   cursor: pointer;
 
   &:hover {
-    background: linear-gradient(135deg, 
-      rgba(59, 130, 246, 0.1) 0%, 
+    background: linear-gradient(
+      135deg,
+      rgba(59, 130, 246, 0.1) 0%,
       rgba(245, 158, 11, 0.05) 100%
     );
     border-color: rgba(59, 130, 246, 0.3);
@@ -348,7 +320,7 @@ const MobileSubMenuItem = styled.div`
 // Mobile SubMenu Section Component
 const MobileSubMenuSection = styled.div`
   margin-bottom: ${theme.spacing.lg};
-      width: 75%;
+  width: 75%;
 
   &:last-child {
     margin-bottom: 0;
@@ -490,11 +462,11 @@ const Navbar = () => {
           <NavLink as={Link} to="/market">
             {menuItems.market}
           </NavLink>
-          
+
           <NavLink as={Link} to="/payment">
             {menuItems.payments}
           </NavLink>
-          
+
           <NavLink as={Link} to="/company">
             {menuItems.company}
           </NavLink>
@@ -543,15 +515,15 @@ const Navbar = () => {
             <SubMenu onItemClick={handleLinkClick} isMobile={true} />
           </SubMenuWrapper>
         </NavLinkWithSubmenu>
-        
+
         <NavLink as={Link} to="/market" onClick={handleLinkClick}>
           {menuItems.market}
         </NavLink>
-        
+
         <NavLink as={Link} to="/payment" onClick={handleLinkClick}>
           {menuItems.payments}
         </NavLink>
-        
+
         <NavLink as={Link} to="/company" onClick={handleLinkClick}>
           {menuItems.company}
         </NavLink>
@@ -582,15 +554,15 @@ const NavbarWrapper = styled.header`
   left: 0;
   right: 0;
   background: ${({ scrolled }) =>
-    scrolled 
+    scrolled
       ? `linear-gradient(135deg, ${theme.colors.background}f0 0%, ${theme.colors.primary}e6 100%)`
-      : 'rgba(15, 23, 42, 0.8)'
-  };
+      : "rgba(15, 23, 42, 0.8)"};
   backdrop-filter: blur(12px);
-  border-bottom: 1px solid ${({ scrolled }) => 
-    scrolled ? theme.colors.border : 'rgba(51, 65, 85, 0.3)'
-  };
-  padding: ${({ scrolled }) => scrolled ? theme.spacing.sm : theme.spacing.md} 0;
+  border-bottom: 1px solid
+    ${({ scrolled }) =>
+      scrolled ? theme.colors.border : "rgba(51, 65, 85, 0.3)"};
+  padding: ${({ scrolled }) => (scrolled ? theme.spacing.sm : theme.spacing.md)}
+    0;
   z-index: 1000;
   transition: all ${theme.transitions.medium};
 `;
@@ -598,12 +570,10 @@ const NavbarWrapper = styled.header`
 const NavContainer = styled(Container)`
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: flex-start;
   max-width: 1200px;
-  margin: 0 auto;
   padding: 0 ${theme.spacing.lg};
-
-  @media (max-width: ${theme.breakpoints.tablet}) {
+  width: 100% @media (max-width: ${theme.breakpoints.tablet}) {
     padding: 0 ${theme.spacing.md};
   }
 `;
@@ -613,6 +583,8 @@ const NavLinksDesktop = styled.nav`
   align-items: center;
   flex: 1;
   justify-content: center;
+  margin-left: ${theme.spacing.lg};
+  margin-right: ${theme.spacing.lg};
 
   @media (max-width: ${theme.breakpoints.tablet}) {
     display: none;
@@ -623,6 +595,7 @@ const ActionsDesktop = styled.div`
   display: flex;
   align-items: center;
   gap: ${theme.spacing.sm};
+  margin-left: auto;
 
   @media (max-width: ${theme.breakpoints.tablet}) {
     display: none;
@@ -631,7 +604,11 @@ const ActionsDesktop = styled.div`
 
 const MobileMenu = styled.nav`
   display: ${({ isOpen }) => (isOpen ? "block" : "none")};
-  background: linear-gradient(135deg, ${theme.colors.surface} 0%, ${theme.colors.secondary} 100%);
+  background: linear-gradient(
+    135deg,
+    ${theme.colors.surface} 0%,
+    ${theme.colors.secondary} 100%
+  );
   position: absolute;
   top: 100%;
   left: 0;
@@ -666,7 +643,7 @@ const MobileActions = styled.div`
 `;
 
 const LoginLink = styled.a`
-  color: ${theme.colors.textSecondary};
+  color: ${theme.colors.text};
   text-decoration: none;
   padding: ${theme.spacing.sm} ${theme.spacing.md};
   border-radius: 8px;
@@ -676,15 +653,19 @@ const LoginLink = styled.a`
 
   &:hover,
   &:focus {
-    color: ${theme.colors.accent};
-    background-color: rgba(245, 158, 11, 0.1);
+    color: ${theme.colors.text};
+    background-color: ${theme.colors.primary};
     outline: none;
   }
 `;
 
 const SignUpButton = styled.a`
-  background: linear-gradient(135deg, ${theme.colors.accent} 0%, ${theme.colors.warning} 100%);
-  color: ${theme.colors.background};
+  background: linear-gradient(
+    0deg,
+    ${theme.colors.accent} 0%,
+    ${theme.colors.primary} 100%
+  );
+  color: ${theme.colors.text};
   text-decoration: none;
   padding: ${theme.spacing.sm} ${theme.spacing.lg};
   border-radius: 12px;
@@ -737,7 +718,7 @@ const MenuToggle = styled.button`
 
   &:hover,
   &:focus {
-    background: rgba(245, 158, 11, 0.1);
+    background: ${theme.colors.secondary};
     border-color: ${theme.colors.accent};
     outline: none;
   }
@@ -802,7 +783,8 @@ const subMenuItems = [
       {
         path: "/flexible-terms",
         title: "Fixed-term Savings",
-        description: "Earn more interest for longer periods of up to 12 months.",
+        description:
+          "Earn more interest for longer periods of up to 12 months.",
       },
       {
         path: "/dual-invest",
@@ -826,7 +808,7 @@ const subMenuItems = [
     items: [
       {
         path: "/card",
-        title: "SyZyKy Card",
+        title: "Zenbank Card",
         description: "Spend while earning interest and receiving cashback.",
       },
     ],

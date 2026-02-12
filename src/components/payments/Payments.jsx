@@ -1125,7 +1125,7 @@ const Payments = () => {
               Accessible crypto wallet for everyone, everywhere.
             </HeroSubtitle>
             <HeroDescription>
-              Let's embrace the future with cryptocurrency payments via Syzyky Pay! Seamlessly convert and spend your digital assets anywhere in the world.
+              Let's embrace the future with cryptocurrency payments via Zenbank Pay! Seamlessly convert and spend your digital assets anywhere in the world.
             </HeroDescription>
             <ButtonGroup>
               <PrimaryButton aria-label="Get your card now" onClick={() => navigate('/app_download')}>
@@ -1145,7 +1145,7 @@ const Payments = () => {
                   <CardIcon primary>
                     <Zap size={24} color="#ec4899" />
                   </CardIcon>
-                  <CardTitle>Syzyky Pay</CardTitle>
+                  <CardTitle>Zenbank Pay</CardTitle>
                 </CardHeader>
                 <CardNumber>•••• •••• •••• 1234</CardNumber>
               </Card>
@@ -1154,7 +1154,7 @@ const Payments = () => {
                   <CardIcon>
                     <Shield size={24} color="#ffffff" />
                   </CardIcon>
-                  <CardTitle>Syzyky Pay</CardTitle>
+                  <CardTitle>Zenbank Pay</CardTitle>
                 </CardHeader>
                 <CardNumber>•••• •••• •••• 5678</CardNumber>
               </Card>
@@ -1220,7 +1220,7 @@ const Payments = () => {
         <SectionContainer>
           <SectionTitle>SPEND CRYPTO LIKE FIAT</SectionTitle>
           <SectionDescription>
-            Swift, seamless, secure: Transform your crypto into everyday purchases with Syzyky Pay.
+            Swift, seamless, secure: Transform your crypto into everyday purchases with Zenbank Pay.
           </SectionDescription>
         </SectionContainer>
       </SpendCryptoSection>
@@ -1250,7 +1250,7 @@ const Payments = () => {
                       <PhoneCardNumber>•••• •••• •••• 9988</PhoneCardNumber>
                       <PhoneCardName>Anthony Martinez</PhoneCardName>
                     </PhoneCardInfo>
-                    <PhoneCardFooter>Syzyky Pay</PhoneCardFooter>
+                    <PhoneCardFooter>Zenbank Pay</PhoneCardFooter>
                   </PhoneCard>
                   <PhoneActions>
                     <PhoneActionButton primary>Transfer</PhoneActionButton>
@@ -1264,7 +1264,7 @@ const Payments = () => {
                 <FloatingCardIcon>
                   <Zap size={16} color="#1f2937" />
                 </FloatingCardIcon>
-                <FloatingCardTitle>Syzyky Pay</FloatingCardTitle>
+                <FloatingCardTitle>Zenbank Pay</FloatingCardTitle>
               </FloatingCardContent>
             </FloatingCard>
           </PhoneMockupContainer>
@@ -1351,7 +1351,7 @@ const Payments = () => {
               EVERYWHERE
             </GlobalTitle>
             <GlobalDescription>
-              Use your Syzyky Pay card anywhere traditional cards are accepted. Shop online, pay in stores, withdraw cash - all powered by your crypto with instant conversion and global acceptance.
+              Use your Zenbank Pay card anywhere traditional cards are accepted. Shop online, pay in stores, withdraw cash - all powered by your crypto with instant conversion and global acceptance.
             </GlobalDescription>
             <PrimaryButton aria-label="Get started today" onClick={() => navigate('/app_download')}>
               Get Started Today <ArrowRight size={20} />

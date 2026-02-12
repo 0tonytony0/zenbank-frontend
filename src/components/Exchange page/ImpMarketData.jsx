@@ -107,77 +107,108 @@ const ImpMarketdetails = () => {
 `;
 
     return (
-        <>
-            <DataMainSection>
-                <InnerMainSection>
-                    <MarketMainBox>
-                        <MarketMainHead>
-                            <h1>
-                                All the important market <br />data is in your hands.
-                            </h1>
-                        </MarketMainHead>
+      <>
+        <DataMainSection>
+          <InnerMainSection>
+            <MarketMainBox>
+              <MarketMainHead>
+                <h1>
+                  All the important market <br />
+                  data is in your hands.
+                </h1>
+              </MarketMainHead>
 
-                        <MarketMainImage>
-                            <img src={MarketmainImg} alt="" style={{ width: 'auto', height: '300px', borderRadius: '8px' }} />
-                        </MarketMainImage>
+              <MarketMainImage>
+                <img
+                  src={MarketmainImg}
+                  alt=""
+                  style={{
+                    width: "auto",
+                    height: "300px",
+                    borderRadius: "8px",
+                  }}
+                />
+              </MarketMainImage>
 
-                        <MarketMainPre>
-                            Do your due diligence before trading crypto, directly from the Syzyky app.
-                        </MarketMainPre>
+              <MarketMainPre>
+                Do your due diligence before trading crypto, directly from the
+                Zenbank app.
+              </MarketMainPre>
+            </MarketMainBox>
 
+            <FeaturesContainer>
+              <FeatureItem>
+                <IconBox>
+                  <FaFileAlt />
+                </IconBox>
+                <TextContent>
+                  Get the latest insights on time with an AI-curated news
+                  summary.
+                </TextContent>
+              </FeatureItem>
 
-                    </MarketMainBox>
+              <FeatureItem>
+                <IconBox>
+                  <FaBell />
+                </IconBox>
+                <TextContent>
+                  Set up custom alerts and get notified when your target is
+                  reached.
+                </TextContent>
+              </FeatureItem>
 
-                    <FeaturesContainer>
-                        <FeatureItem>
-                            <IconBox><FaFileAlt /></IconBox>
-                            <TextContent>Get the latest insights on time with an AI-curated news summary.</TextContent>
-                        </FeatureItem>
+              <FeatureItem>
+                <IconBox>
+                  <FaExpandAlt />
+                </IconBox>
+                <TextContent>
+                  Track on-chain <Badge>WHALE ACTIVITY ℹ️</Badge> and{" "}
+                  <Badge>OWNERSHIP ℹ️</Badge> for the asset.
+                </TextContent>
+              </FeatureItem>
 
-                        <FeatureItem>
-                            <IconBox><FaBell /></IconBox>
-                            <TextContent>Set up custom alerts and get notified when your target is reached.</TextContent>
-                        </FeatureItem>
+              <FeatureItem>
+                <IconBox>
+                  <FaThumbsUp />
+                </IconBox>
+                <TextContent>
+                  View the positive or negative{" "}
+                  <Badge>SOCIAL SENTIMENT ℹ️</Badge> on X.
+                </TextContent>
+              </FeatureItem>
 
-                        <FeatureItem>
-                            <IconBox><FaExpandAlt /></IconBox>
-                            <TextContent>
-                                Track on-chain <Badge>WHALE ACTIVITY ℹ️</Badge> and <Badge>OWNERSHIP ℹ️</Badge> for the asset.
-                            </TextContent>
-                        </FeatureItem>
+              <FeatureItem>
+                <IconBox>
+                  <FaFileAlt />
+                </IconBox>
+                <TextContent>
+                  Track trending news regarding each asset listed on Zenbank.
+                </TextContent>
+              </FeatureItem>
 
-                        <FeatureItem>
-                            <IconBox><FaThumbsUp /></IconBox>
-                            <TextContent>
-                                View the positive or negative <Badge>SOCIAL SENTIMENT ℹ️</Badge> on X.
-                            </TextContent>
-                        </FeatureItem>
+              <FeatureItem>
+                <IconBox>
+                  <FaUser />
+                </IconBox>
+                <TextContent>
+                  See if more Zenbank clients are buying or selling specific
+                  assets.
+                </TextContent>
+              </FeatureItem>
 
-                        <FeatureItem>
-                            <IconBox><FaFileAlt /></IconBox>
-                            <TextContent>Track trending news regarding each asset listed on Syzyky.</TextContent>
-                        </FeatureItem>
-
-                        <FeatureItem>
-                            <IconBox><FaUser /></IconBox>
-                            <TextContent>See if more Syzyky clients are buying or selling specific assets.</TextContent>
-                        </FeatureItem>
-
-                        <Note>
-                            <IconBox><FaStar /></IconBox>
-                            <TextContent>
-                                On-chain analytics and social sentiment are exclusive to Platinum Tier clients.
-                            </TextContent>
-                        </Note>
-                    </FeaturesContainer>
-
-                </InnerMainSection>
-
-            </DataMainSection>
-
-
-
-        </>
+              <Note>
+                <IconBox>
+                  <FaStar />
+                </IconBox>
+                <TextContent>
+                  On-chain analytics and social sentiment are exclusive to
+                  Platinum Tier clients.
+                </TextContent>
+              </Note>
+            </FeaturesContainer>
+          </InnerMainSection>
+        </DataMainSection>
+      </>
     );
 };
 

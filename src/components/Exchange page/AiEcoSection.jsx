@@ -94,7 +94,9 @@ const steps = [
 const AiecoSection = () => {
   return (
     <Section>
-      <Heading>Utilize the entire Syzyky ecosystem to grow your wealth.</Heading>
+      <Heading>
+        Utilize the entire Zenbank ecosystem to grow your wealth.
+      </Heading>
       <Grid>
         {steps.map((step, idx) => (
           <Step key={idx} isLast={idx === steps.length - 1}>

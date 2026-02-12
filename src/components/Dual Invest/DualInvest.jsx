@@ -17,7 +17,8 @@ function DualInvest() {
     const Flexhead1 = "Generate strong returns with every move."
     const Flexhead2 = "Buy low and sell high while earning high yields with Dual Investment."
     const BenefitsHeading1 = "The benefits of Flexible Savings."
-    const BenefitsParagraph1 = "Join the Syzyky Loyalty Program and benefit from industry-leading rates with an account balance above $5,000."
+    const BenefitsParagraph1 =
+      "Join the Zenbank Loyalty Program and benefit from industry-leading rates with an account balance above $5,000.";
     const BenefitsHeading2 = "Capture high yields"
     const BenefitsParagraph2 = "Earn up to triple-digit interest rates depending on the strategy."
     const BenefitsHeading3 = "Fixed earnings"

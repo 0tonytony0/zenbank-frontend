@@ -150,44 +150,46 @@ function CardSimplify() {
   `;
 
     return (
-        <CardContainer>
-            <CardMidsec>
-                <CardMidBox>
-                    <CardHead1>Spend with peace of mind.</CardHead1>
-                    <Cardtxt1>Manage your Syzyky Card in real time with just a few taps.</Cardtxt1>
-                </CardMidBox>
+      <CardContainer>
+        <CardMidsec>
+          <CardMidBox>
+            <CardHead1>Spend with peace of mind.</CardHead1>
+            <Cardtxt1>
+              Manage your Zenbank Card in real time with just a few taps.
+            </Cardtxt1>
+          </CardMidBox>
 
-                <CardMidBox2>
-                    <CardHead2>
-                        <TextBox1>
-                            <img src={CardSimImg} alt="SyZyKy Card" />
-                        </TextBox1>
-                    </CardHead2>
+          <CardMidBox2>
+            <CardHead2>
+              <TextBox1>
+                <img src={CardSimImg} alt="Zenbank Card" />
+              </TextBox1>
+            </CardHead2>
 
-                    <Cardtxt2>
-                        <CardIconBox>
-                            <CardBoxPoints>
-                                <HiOutlineDocumentText size={30} />
-                                Import your Syzyky transaction history.
-                            </CardBoxPoints>
-                            <CardBoxPoints>
-                                <BsPlusSlashMinus size={30} />
-                                Manage your balances and limits instantly.
-                            </CardBoxPoints>
-                            <CardBoxPoints>
-                                <CiBank size={30} />
-                                Connect your Syzyky to your bank accounts.
-                            </CardBoxPoints>
+            <Cardtxt2>
+              <CardIconBox>
+                <CardBoxPoints>
+                  <HiOutlineDocumentText size={30} />
+                  Import your Zenbank transaction history.
+                </CardBoxPoints>
+                <CardBoxPoints>
+                  <BsPlusSlashMinus size={30} />
+                  Manage your balances and limits instantly.
+                </CardBoxPoints>
+                <CardBoxPoints>
+                  <CiBank size={30} />
+                  Connect your Zenbank to your bank accounts.
+                </CardBoxPoints>
 
-                            <LinkLineP>
-                                Learn more about Syzyky's top-tier infrastructure
-                                <CiSquareChevRight />
-                            </LinkLineP>
-                        </CardIconBox>
-                    </Cardtxt2>
-                </CardMidBox2>
-            </CardMidsec>
-        </CardContainer>
+                <LinkLineP>
+                  Learn more about Zenbank's top-tier infrastructure
+                  <CiSquareChevRight />
+                </LinkLineP>
+              </CardIconBox>
+            </Cardtxt2>
+          </CardMidBox2>
+        </CardMidsec>
+      </CardContainer>
     );
 }
 

@@ -96,7 +96,7 @@ const Footer = () => {
           <FooterLink href="#">Fixed-term Savings</FooterLink>
           <FooterLink href="#">Exchange</FooterLink>
           {/* <FooterLink href="#">Credit Line</FooterLink> */}
-          <FooterLink href="#">Syzyky Card</FooterLink>
+          <FooterLink href="#">Zenbank Card</FooterLink>
           <FooterLink href="#">Dual Investment</FooterLink>
           <FooterLink href="#">Futures</FooterLink>
           {/* <FooterLink href="#">Loyalty Program</FooterLink> */}
@@ -112,7 +112,7 @@ const Footer = () => {
           <FooterLink href="#">Corporates</FooterLink>
           <FooterLink href="#">Institutions</FooterLink>
           <FooterLink href="#">White Label</FooterLink>
-          <FooterLink href="#">Syzyky Ventures</FooterLink>
+          <FooterLink href="#">Zenbank Ventures</FooterLink>
         </Column>
 
         {/* Company Column */}
@@ -140,13 +140,13 @@ const Footer = () => {
           <FooterLink href="#">Services Terms</FooterLink>
           {/* <FooterLink href="#">Credit Terms</FooterLink> */}
           <FooterLink href="#">DeFi Terms</FooterLink>
-          <FooterLink href="#">Syzyky Card Terms</FooterLink>
+          <FooterLink href="#">Zenbank Card Terms</FooterLink>
           <FooterLink href="#">Cookies Policy</FooterLink>
         </Column>
 
-        {/* Follow Syzyky Section */}
+        {/* Follow Zenbank Section */}
         <FollowSection>
-          <ColumnTitle>Follow Syzyky</ColumnTitle>
+          <ColumnTitle>Follow Zenbank</ColumnTitle>
           <IconContainer>
             <IconPlaceholder />
             <IconPlaceholder />

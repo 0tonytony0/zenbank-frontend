@@ -15,13 +15,13 @@ import PerAnnual from "./PersonalAnnual";
 
 function Personal() {
   const BenefitsHeading1 = "The benefits of Flexible Savings."
-  const BenefitsParagraph1 = "Join the Syzyky Loyalty Program and benefit from industry-leading rates with an account balance above $5,000."
+  const BenefitsParagraph1 = "Join the Zenbank Loyalty Program and benefit from industry-leading rates with an account balance above $5,000."
   const BenefitsHeading2 = "Daily compounding"
-  const BenefitsParagraph2 = "Your personal USD, EUR, and GBP accounts on Syzyky help you prevent blocked or delayed transactions that banks can impose on third-party transfers. Adding funds is fee-free for EUR and GBP transfers, and USD amounts over $5,000."
+  const BenefitsParagraph2 = "Your personal USD, EUR, and GBP accounts on Zenbank help you prevent blocked or delayed transactions that banks can impose on third-party transfers. Adding funds is fee-free for EUR and GBP transfers, and USD amounts over $5,000."
   const BenefitsHeading3 = "Funds available anytime"
   const BenefitsParagraph3 = "Your funds are earning interest while remaining available for investing or trading."
   const BenefitsHeading4 = "Generating interest for over 6 years"
-  const BenefitsParagraph4 = "Syzyky clients have enjoyed consistent interest-generation since 2019, no matter the market conditions."
+  const BenefitsParagraph4 = "Zenbank clients have enjoyed consistent interest-generation since 2019, no matter the market conditions."
   return (
     <>
       <Banner Name="Personal" />

@@ -62,8 +62,8 @@ const Features = () => {
   return (
     <Section>
       <Container>
-        <Title>Why Choose Syzyky?</Title>
-        <Subtitle>Why Syzyky's is Better</Subtitle>
+        <Title>Why Choose Zenbank?</Title>
+        <Subtitle>Why Zenbank's is Better</Subtitle>
         <Grid>
           <Card whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 20 }} transition={{ duration: 0.3 }}>
             <Emoji>⚡</Emoji>

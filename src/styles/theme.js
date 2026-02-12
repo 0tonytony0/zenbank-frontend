@@ -1,19 +1,26 @@
 // src/styles/theme.js
 export const theme = {
   colors: {
-    primary: "#4361ee",
-    secondary: "#3f37c9",
-    accent: "#4cc9f0",
-    text: " #6B6464",
-    textLight: "#666666",
-    background: "#0D0D2B", //Dark Navy
-    text: "#FFFFFF", // White text to contrast
-    primary: "#4CAF50", // Example primary
-    secondary: "#FF4081", // Example secondary
-    backgroundAlt: "#f8f9fa",
-    border: "#e0e0e0",
-    success: "#4BB543",
-    error: "#FF3333",
+    // Brand
+    primary: "#1E5BB8", // Main brand blue
+    secondary: "#0F3D8C", // Deep blue
+    background: "#0A0A0A",
+
+    // accent: "#4cc9f0",
+    accent: "#121212",
+    // backgroundAlt: "#f8f9fa",
+    backgroundAlt: "#1A1A1A",
+
+    text: "#FFFFFF",
+    textLight: "#B0B8C1",
+    border: "rgba(30, 91, 184, 0.25)",
+    
+    success: "#2ECC71",
+    error: "#E74C3C",
+    warning: "#F1C40F",
+    info: "#3498DB",
+    // surface: "#121212",
+    // surfaceLight: "#1A1A1A",
   },
   fonts: {
     main: "'Poppins', sans-serif",

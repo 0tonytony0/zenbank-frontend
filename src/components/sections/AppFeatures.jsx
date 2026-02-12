@@ -17,7 +17,6 @@ const Wrapper = styled.section`
 const Header = styled.div`
   display: flex;
   align-items: center;
-  margin-bottom: 3rem;
   flex-direction: column;
   text-align: center;
   max-width: 800px;

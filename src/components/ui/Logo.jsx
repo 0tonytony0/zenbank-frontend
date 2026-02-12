@@ -16,7 +16,7 @@ const LogoWrapper = styled.div`
     gap: 0.5rem;
 
     span {
-        color: ${({ theme }) => theme.colors.accent};
+        color: ${({ theme }) => theme.colors.text};
     }
 `;
 
@@ -31,7 +31,7 @@ const Logo = () => {
     return (
         <LogoWrapper>
            <Link to="/"> <LogoIcon src={logo}  alt="Logo" /></Link>
-           <Link to="/"> <span>Syzyky</span></Link>
+           <Link to="/"> <span>Zenbank</span></Link>
         </LogoWrapper>
     );
 };

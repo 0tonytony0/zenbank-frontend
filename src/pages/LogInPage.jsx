@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Link, useNavigate } from "react-router-dom"; 
-import { getLogin } from "../api/Api"; 
+import { Link, useNavigate } from "react-router-dom";
+import { getLogin } from "../api/Api";
 import { FaEye, FaEyeSlash, FaSpinner } from "react-icons/fa";
-import './Login.css'; 
+import "./Login.css";
 
 // const Container = styled.div`
 //   display: flex;
@@ -11,7 +11,7 @@ import './Login.css';
 //   align-items: center;
 //   justify-content: center;
 //   height: 100vh;
-//   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+//   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 //   background: ${({ variant, theme }) => {
 //     switch (variant) {
 //       case 'outlined':
@@ -34,8 +34,8 @@ const Container = styled.div`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  font-family: 'Poppins', sans-serif; 
-  background: #0D0D2B; /* Dark navy background */
+  font-family: "Poppins", sans-serif;
+  background: #0d0d2b; /* Dark navy background */
   padding: 20px;
 `;
 
@@ -55,13 +55,11 @@ const HeaderText = styled.div`
   }
 `;
 
-
-
 const FormWrapper = styled.div`
   background: rgba(255, 255, 255, 0.1);
   padding: 40px 50px;
   border-radius: 12px;
-  box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
   width: 100%;
   max-width: 400px;
   color: white; /* Ensure text is visible */
@@ -71,10 +69,6 @@ const FormWrapper = styled.div`
     text-align: center;
   }
 `;
-
- 
- 
-
 
 const Input = styled.input`
   width: 100%;
@@ -116,16 +110,18 @@ const Button = styled.button`
   font-weight: 600;
   cursor: pointer;
   color: white;
+  margin-top: 20px;
 
   /* Gradient Background */
-  background: linear-gradient(90deg, #4facfe 0%, #8e44ad 100%);
+  background: linear-gradient(90deg, #06355e 0%, #0a088b 100%);
   box-shadow: 0 0 8px rgba(79, 172, 254, 0.5);
 
   transition: all 0.3s ease;
 
   &:hover {
-    box-shadow: 0 0 20px rgba(79, 172, 254, 0.8),
-                0 0 40px rgba(142, 68, 173, 0.8);
+    box-shadow:
+      0 0 20px rgba(79, 172, 254, 0.8),
+      0 0 40px rgba(142, 68, 173, 0.8);
     transform: translateY(-2px);
   }
 
@@ -134,13 +130,12 @@ const Button = styled.button`
   }
 `;
 
-
 const SignupLink = styled(Link)`
   display: block;
   text-align: center;
   margin-top: 15px;
   font-size: 0.95rem;
-  color: #2a5298;
+  color: white;
   text-decoration: none;
   display: inline;
 
@@ -152,9 +147,9 @@ const SignupLink = styled(Link)`
 const ForgotPasswordLink = styled(Link)`
   display: block;
   text-align: right;
-  margin-top: 5px;
+  margin-top: 15px;
   font-size: 0.95rem;
-  color: #2a5298;
+  color: #e9eef5;
   text-decoration: none;
   // display: right;
 
@@ -182,19 +177,16 @@ const BackButton = styled.button`
   }
 `;
 
-
-
 const LogIn = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [loading, setLoading] = useState(false);
   const [showPassword, setShowPassword] = useState(false);
-  const [error, setError] = useState(""); 
-
+  const [error, setError] = useState("");
 
   const navigate = useNavigate();
 
-  //New  
+  //New
 
   const handleLogin = async (e) => {
     e.preventDefault();
@@ -207,26 +199,24 @@ const LogIn = () => {
       if (result.status === "success") {
         // Encode token for URL safety
         const encodedToken = encodeURIComponent(result.token);
-
         // Redirect to dashboard with token in URL
 
-        window.location.href = `https://dashboard.syzyky.org/auth?token=${encodedToken}&email=${encodeURIComponent(email)}`;
+        window.location.href = `https://zen-user-frontend.vercel.app/auth?token=${encodedToken}&email=${encodeURIComponent(email)}`;
+        // window.location.href = `https://zen-syzyky-frontend.vercel.app/`;
+
         // window.location.href = `http://51.20.143.202/auth?token=${encodedToken}&email=${encodeURIComponent(email)}`;
         // window.location.href = `http://35.89.212.125:3000/auth?token=${encodedToken}&email=${encodeURIComponent(email)}`;
         // window.location.href = `http://localhost:5173/auth?token=${encodedToken}&email=${encodeURIComponent(email)}`;
         // window.location.href = `http://sangamjhaprojects.dedyn.io:3000/auth?token=${encodedToken}&email=${encodeURIComponent(email)}`;
-
       } else {
         setError(result.message || "Invalid credentials");
       }
-
     } catch (error) {
       setError("Something went wrong. Please try again.");
     } finally {
       setLoading(false);
     }
   };
-
 
   return (
     <Container>
@@ -240,7 +230,13 @@ const LogIn = () => {
         <h2>LogIn</h2>
         <form>
           {/* Email Input */}
-          <Input type="email" placeholder="Email" required value={email} onChange={(e) => setEmail(e.target.value)} />
+          <Input
+            type="email"
+            placeholder="Email"
+            required
+            value={email}
+            onChange={(e) => setEmail(e.target.value)}
+          />
 
           {/* Password Input */}
           <div style={{ position: "relative" }}>
@@ -267,17 +263,35 @@ const LogIn = () => {
                 padding: 0,
               }}
             >
-              {showPassword ? <FaEyeSlash size={18} color="#555" /> : <FaEye size={18} color="#555" />}
+              {showPassword ? (
+                <FaEyeSlash size={18} color="#555" />
+              ) : (
+                <FaEye size={18} color="#555" />
+              )}
             </button>
           </div>
 
-          {error && <p style={{ color: "red", fontSize: "0.9rem", marginTop: "5px" }}>{error}</p>}
+          {error && (
+            <p style={{ color: "red", fontSize: "0.9rem", marginTop: "5px" }}>
+              {error}
+            </p>
+          )}
 
-          <ForgotPasswordLink to="/forgot-password" style={{color: "#8A2BE2"}}>Forgot Password?</ForgotPasswordLink>
+          <ForgotPasswordLink
+            to="/forgot-password"
+          >
+            Forgot Password?
+          </ForgotPasswordLink>
 
           <Button type="submit" onClick={handleLogin} disabled={loading}>
             {loading ? (
-              <div style={{ display: "flex", alignItems: "center", justifyContent: "center" }}>
+              <div
+                style={{
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
                 <FaSpinner className="spin" style={{ marginRight: "8px" }} />
                 Signing In...
               </div>
@@ -286,14 +300,22 @@ const LogIn = () => {
             )}
           </Button>
 
-          <p style={{ textAlign: "center", marginTop: "15px", fontSize: "0.95rem" }}>
-            Don't have an account? <SignupLink to="/signup" style={{color: "#8A2BE2"}}>Sign Up</SignupLink>
+          <p
+            style={{
+              textAlign: "center",
+              marginTop: "15px",
+              fontSize: "0.95rem",
+            }}
+          >
+            Don't have an account?{" "}
+            <SignupLink to="/signup">
+              Sign Up
+            </SignupLink>
           </p>
         </form>
       </FormWrapper>
     </Container>
   );
-
 };
 
 export default LogIn;

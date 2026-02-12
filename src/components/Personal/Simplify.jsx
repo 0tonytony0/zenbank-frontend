@@ -12,7 +12,7 @@ const SimplifyBox = styled.section`
   justify-content: center;
   align-items: center;
   padding: 3rem 1rem;
-  background: ${({ theme }) => theme.colors.background || '#0a1a3b'};
+background: ${({ theme }) => theme.colors.background};
   min-height: 100vh;
 `;
 
@@ -41,7 +41,7 @@ const SimpHead = styled.div`
 const Title = styled.h2`
   font-size: 2.5rem;
   font-weight: 700;
-  color: ${({ theme }) => theme.colors.text || '#ffffff'};
+color: ${({ theme }) => theme.colors.text};
   line-height: 1.2;
   margin: 0;
 
@@ -56,7 +56,7 @@ const Title = styled.h2`
 
 const SimpTxt = styled.div`
   font-size: 1.125rem;
-  color: ${({ theme }) => theme.colors.textLight || '#b0c4de'};
+color: ${({ theme }) => theme.colors.textLight};
   line-height: 1.5;
   max-width: 600px;
   margin: 0 auto;
@@ -147,7 +147,7 @@ const SimpBoxPoints = styled(motion.div)`
   }
 
   svg {
-    color: ${({ theme }) => theme.colors.primary || '#00d4ff'};
+color: ${({ theme }) => theme.colors.primary};
     font-size: 2rem;
 
     @media (max-width: 768px) {
@@ -162,8 +162,8 @@ const LernBtn = styled(motion.div)`
 `;
 
 const LearnMoreBtn = styled.button`
-  background: ${({ theme }) => theme.colors.primary || '#00d4ff'};
-  color: ${({ theme }) => theme.colors.background || '#0a1a3b'};
+background: ${({ theme }) => theme.colors.primary};
+color: ${({ theme }) => theme.colors.background};
   border: none;
   padding: 0.8rem 2rem;
   font-size: 1rem;
@@ -173,7 +173,7 @@ const LearnMoreBtn = styled.button`
   transition: background 0.3s ease, transform 0.3s ease;
 
   &:hover {
-    background: ${({ theme }) => theme.colors.primaryHover || '#00b8e6'};
+background: ${({ theme }) => theme.colors.primary};
     transform: scale(1.05);
   }
 
@@ -207,7 +207,7 @@ function Simplify() {
   const features = [
     {
       icon: <HiOutlineDocumentText size={35} />,
-      text: 'Import your Syzyky transaction history.',
+      text: 'Import your Zenbank transaction history.',
     },
     {
       icon: <BsPlusSlashMinus size={35} />,

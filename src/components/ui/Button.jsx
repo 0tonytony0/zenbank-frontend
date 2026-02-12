@@ -3,7 +3,7 @@ import styled from 'styled-components';
 
 const StyledButton = styled.button`
   padding: 0.75rem 1.5rem;
-  border-radius: ${({ theme }) => theme.borderRadius?.medium || '4px'};
+  border-radius: ${({ theme }) => theme.borderRadius.medium};
   font-weight: bold;
   font-size: 1rem;
   cursor: pointer;
@@ -13,50 +13,50 @@ const StyledButton = styled.button`
   /* Background based on variant */
   background: ${({ variant, theme }) => {
     switch (variant) {
-      case 'outlined':
-        return 'transparent';
-      case 'green':
-        return theme.colors.green || '#28a745';
-      case 'blue':
-        return theme.colors.blue || '#17a2b8';
+      case "outlined":
+        return "transparent";
+      case "green":
+        return theme.colors.success;
+      case "blue":
+        return theme.colors.primary;
       default:
         // ✅ Blue-Violet Gradient (Sign In / Sign Up style)
-        return `linear-gradient(135deg, #3b82f6, #8b5cf6)`;
+        return `linear-gradient(135deg, ${theme.colors.primaryLight}, ${theme.colors.accent})`;
     }
   }};
 
   color: ${({ variant, theme }) => {
     switch (variant) {
-      case 'outlined':
-        return theme.colors.primary || '#343a40';
-      case 'green':
-      case 'blue':
+      case "outlined":
+        return theme.colors.primary;
+      case "green":
+      case "blue":
       default:
-        return '#fff';
+        return theme.colors.white;
     }
   }};
 
   border: ${({ variant, theme }) =>
-    variant === 'outlined'
-      ? `2px solid ${theme.colors.primary || '#343a40'}`
-      : 'none'};
+    variant === "outlined"
+      ? `2px solid ${theme.colors.primary}`
+      : "none"};
 
   /* Hover effect */
   &:hover {
     background: ${({ variant, theme }) => {
       switch (variant) {
-        case 'outlined':
-          return 'transparent';
-        case 'green':
-          return theme.colors.green || '#28a745';
-        case 'blue':
-          return theme.colors.blue || '#17a2b8';
+        case "outlined":
+          return "transparent";
+        case "green":
+          return theme.colors.success;
+        case "blue":
+          return theme.colors.primary;
         default:
           // ✅ Darker Hover Blue-Violet Gradient
-          return `linear-gradient(135deg, #2563eb, #7c3aed)`;
+          return `linear-gradient(135deg, ${theme.colors.primary}, ${theme.colors.secondary})`;
       }
     }};
-    color: #fff;
+    color: ${({ theme }) => theme.colors.white};
   }
 `;
 

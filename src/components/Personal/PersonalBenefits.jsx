@@ -10,7 +10,7 @@ const BenefitBox = styled.section`
   padding: 3rem 1rem;
   width: 100%;
   box-sizing: border-box;
-  background: ${({ theme }) => theme.colors.background || '#1a1a2e'};
+background: ${({ theme }) => theme.colors.background};
   min-height: 100vh;
   display: flex;
   justify-content: center;
@@ -37,7 +37,7 @@ const BenefitHead = styled(motion.div)`
 const MainHeading = styled.h1`
   font-size: 2.5rem;
   font-weight: 700;
-  color: ${({ theme }) => theme.colors.text || '#ffffff'};
+color: ${({ theme }) => theme.colors.text};
   margin: 0;
   line-height: 1.2;
 
@@ -48,7 +48,7 @@ const MainHeading = styled.h1`
 
 const MainParagraph = styled.p`
   font-size: 1.125rem;
-  color: ${({ theme }) => theme.colors.textLight || '#a0a0c0'};
+color: ${({ theme }) => theme.colors.textLight};
   margin-top: 0.5rem;
   line-height: 1.5;
 
@@ -107,7 +107,7 @@ const CardTitle = styled.h3`
   }
 
   svg {
-    color: ${({ theme }) => theme.colors.primary || '#4facfe'};
+color: ${({ theme }) => theme.colors.primary};
   }
 `;
 

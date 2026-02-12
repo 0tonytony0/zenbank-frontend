@@ -69,7 +69,7 @@ const ActivateCardSection = () => {
   const steps = [
     {
       number: "1",
-      title: "Open the Syzyky app",
+      title: "Open the Zenbank app",
       description: "Download, launch the app, and hit the 'Card' tab.",
     },
     {
@@ -93,7 +93,7 @@ const ActivateCardSection = () => {
 
   return (
     <SectionContainer>
-      <Title>How to activate your Syzyky Card.</Title>
+      <Title>How to activate your Zenbank Card.</Title>
       <CardsWrapper>
         {steps.map((step) => (
           <Card key={step.number}>
