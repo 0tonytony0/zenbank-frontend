@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import bgImage from "../../assets/WealthSolution.png";
-import { theme } from "../../styles/theme";
+// import { theme } from "../../styles/theme";
 
 // Styled Components
 const Container = styled.div`

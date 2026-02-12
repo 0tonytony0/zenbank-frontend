@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import styled, { ThemeProvider } from "styled-components";
-import theme from "../styles/theme";
+import styled from "styled-components";
+// import theme from "../styles/theme";
 import { Link, useNavigate } from "react-router-dom";
 import { signupUser } from "../api/SignUpApi";
 import { FaEye, FaEyeSlash } from "react-icons/fa";

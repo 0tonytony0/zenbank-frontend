@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.65c8d371.css",
-    "main.js": "/static/js/main.cfa5b53b.js",
+    "main.css": "/static/css/main.bc213fc1.css",
+    "main.js": "/static/js/main.488724ae.js",
     "static/media/WealthGenImg.jpg": "/static/media/WealthGenImg.73fec072ff74b4957840.jpg",
     "static/media/People2.png": "/static/media/People2.8f724623ce8082b46fbd.png",
     "static/media/icon1.png": "/static/media/icon1.9da76029c76746546e5e.png",
@@ -15,12 +15,10 @@
     "static/media/cardsimply.jpg": "/static/media/cardsimply.f42053be855c9464f1a8.jpg",
     "static/media/Mobile22.png": "/static/media/Mobile22.13601f625ead03b00a97.png",
     "static/media/CardBanner.png": "/static/media/CardBanner.c8abfa7fa37dbbb2d4d2.png",
-    "index.html": "/index.html",
-    "main.65c8d371.css.map": "/static/css/main.65c8d371.css.map",
-    "main.cfa5b53b.js.map": "/static/js/main.cfa5b53b.js.map"
+    "index.html": "/index.html"
   },
   "entrypoints": [
-    "static/css/main.65c8d371.css",
-    "static/js/main.cfa5b53b.js"
+    "static/css/main.bc213fc1.css",
+    "static/js/main.488724ae.js"
   ]
 }
