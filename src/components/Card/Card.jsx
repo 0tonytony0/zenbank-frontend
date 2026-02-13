@@ -1,7 +1,7 @@
 // src/App.js
 import React from "react";
 import FundamentalsComponent from "../sections/Fundamentals";
-import WealthGenerationComponent from "../sections/WealthGEneration";
+import WealthGenerationComponent from "../sections/WealthGeneration";
 import IntegrationsComponent from "../sections/IntegrationComponents";
 import FAQ from "../sections/FrequienlyQuestion";
 import AiEcosystem from "../Personal/AiEcosystem";

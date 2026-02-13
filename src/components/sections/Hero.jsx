@@ -2,19 +2,19 @@ import React from 'react';
 import styled from 'styled-components';
 import Button from '../ui/Button';
 import phoneMockup from '../../assets/Phone-Mockup.png';
+import { theme } from '../../styles/theme';
 
 const Wrapper = styled.section`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
   padding: 60px 40px;
   background: linear-gradient(
-  135deg,
-  #0D0D2B 0%,      /* Dark Navy (base) */
-  #1A1A40 50%,     /* Deep Indigo */
-  #2E2E69 100%     /* Rich Midnight Blue */
-);
-
+    135deg,
+    ${theme.colors.accent},
+    ${theme.colors.secondary},
+    ${theme.colors.border}
+  );
 
   flex-wrap: wrap;
   overflow: hidden;

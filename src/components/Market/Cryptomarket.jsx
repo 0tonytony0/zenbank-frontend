@@ -22,8 +22,7 @@ const CryptoHeadSec = styled.div`
   margin-bottom: 20px;
 
   h1 {
-    font-size: 2rem;
-    margin-bottom: 10px;
+    font-size: 3rem;
   }
 
   p {
@@ -76,12 +75,12 @@ const CryptoContainer = styled.div`
 
 const CryptoMainBox = styled.div`
   background: #fff;
-  border-left: 1px solid #ccc;
+  border: 3px solid #002fffe7;
   padding: 20px;
   width: 100%;
   max-width: 340px;
   box-sizing: border-box;
-  border-radius: 10px;
+  border-radius: 15px;
   display: flex;
   flex-direction: column;
 `;
@@ -153,7 +152,7 @@ function Cryptomarket() {
     <CryptoBox>
       <CryptoSec1>
         <CryptoHeadSec>
-          <h1>The crypto markets today.</h1>
+          <h1>The crypto markets Today !!</h1>
           <p>
             Trade over 100 digital assets and explore the latest crypto coin
             prices. Make your first top-up and start earning daily compounding interest.

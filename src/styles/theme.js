@@ -6,9 +6,9 @@ export const theme = {
     secondary: "#0F3D8C", // Deep blue
     background: "#0A0A0A",
 
-    // accent: "#4cc9f0",
+    accent2: "#4cc9f0",
     accent: "#121212",
-    // backgroundAlt: "#f8f9fa",
+    
     backgroundAlt: "#1A1A1A",
 
     text: "#FFFFFF",
@@ -19,8 +19,7 @@ export const theme = {
     error: "#E74C3C",
     warning: "#F1C40F",
     info: "#3498DB",
-    // surface: "#121212",
-    // surfaceLight: "#1A1A1A",
+    
   },
   fonts: {
     main: "'Poppins', sans-serif",

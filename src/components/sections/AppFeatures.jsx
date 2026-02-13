@@ -7,11 +7,12 @@ const Wrapper = styled.section`
   padding: 3rem 1rem;
   width: 100%;
   box-sizing: border-box;
-  background: ${({ theme }) => theme.colors.background || '#f9fafb'};
+  background: ${({ theme }) => theme.colors.background || "#f9fafb"};
   min-height: 100vh; /* Ensure full viewport height for better presentation */
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 `;
 
 const Header = styled.div`
@@ -31,6 +32,7 @@ const Header = styled.div`
 
 const TitleWrapper = styled.div`
   flex: 1;
+  margin-bottom: 4rem;
 `;
 
 const MainTitle = styled.h2`
@@ -45,21 +47,21 @@ const MainTitle = styled.h2`
   }
 `;
 
-const SubTitle = styled.p`
-  font-size: 1.125rem;
-  color: ${({ theme }) => theme.colors.textLight || '#6b7280'};
-  margin-top: 0.5rem;
-  line-height: 1.5;
+// const SubTitle = styled.p`
+//   font-size: 1.125rem;
+//   color: ${({ theme }) => theme.colors.textLight || "#6b7280"};
+//   line-height: 1.5;
+//   margin: 1rem auto;
 
-  @media (max-width: 767px) {
-    font-size: 1rem;
-  }
-`;
+//   @media (max-width: 767px) {
+//     font-size: 1rem;
+//   }
+// `;
 
 const FeaturesList = styled.div`
   display: grid;
   grid-template-columns: 1fr;
-  gap: 1.5rem;
+  gap: 3rem;
   max-width: 1200px;
   width: 100%;
 
@@ -75,14 +77,16 @@ const FeaturesList = styled.div`
 const FeatureCard = styled.div`
   background: linear-gradient(
     135deg,
-    rgba(79, 172, 254, 0.1) 0%,
-    rgba(142, 68, 173, 0.1) 100%
+    ${({ theme }) => theme.colors.accent},
+    ${({ theme }) => theme.colors.border}
   );
-  color: ${({ theme }) => theme.colors.text || '#ffffff'};
+  color: ${({ theme }) => theme.colors.text || "#ffffff"};
   padding: 1.5rem;
   border-radius: 12px;
   text-align: left;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   backdrop-filter: blur(10px); /* Glassmorphism effect */
   border: 1px solid rgba(255, 255, 255, 0.1);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
@@ -98,13 +102,13 @@ const FeatureCard = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 1.25rem;
-  font-weight: 600;
-  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-bottom: 1.5rem;
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  color: ${({ theme }) => theme.colors.text || '#1f2937'};
+  color: ${({ theme }) => theme.colors.text };
 
   @media (max-width: 767px) {
     font-size: 1.125rem;
@@ -116,9 +120,9 @@ const Emoji = styled.span`
 `;
 
 const Description = styled.p`
-  font-size: 0.875rem;
+  font-size: 1rem;
   line-height: 1.6;
-  color: ${({ theme }) => theme.colors.textLight || '#6b7280'};
+  color: ${({ theme }) => theme.colors.text};
   margin: 0;
 
   @media (max-width: 767px) {
@@ -167,10 +171,8 @@ const AppFeatures = () => {
       <Wrapper>
         <Header>
           
-          <TitleWrapper>
-            
-            <MainTitle>“ App Features in Detail </MainTitle>
-            <SubTitle>Your Financial Freedom in One App</SubTitle>
+          <TitleWrapper>            
+            <MainTitle>App Features in Detail </MainTitle>            
           </TitleWrapper>
         </Header>
         <FeaturesList>

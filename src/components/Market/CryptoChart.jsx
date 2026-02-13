@@ -226,6 +226,7 @@ const MarketCap = styled.div`
 const ChartWrapper = styled.div`
   width: 100%;
   height: 50px;
+  padding: 20px;
 
   @media (min-width: 768px) {
     height: 70px;

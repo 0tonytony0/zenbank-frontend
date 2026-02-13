@@ -8,11 +8,14 @@ const HeaderRow = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 20px 20px;
+  margin-top: 50px;
   background: #fafafa;
-  border-bottom: 1px solid #eee;
-  font-weight: 600;
-  font-size: 14px;
+  border: 3px solid #003cff;
+  border-radius: 15px;
+  font-weight: 550;
+  font-size: 15px;
   color: #333;
+  width: 100%;
 
   @media (max-width: 768px) {
     display: none;
@@ -23,8 +26,7 @@ const HeaderRow = styled.div`
 
 export const Column = styled.div`
   flex: ${(props) => props.flex || "1"};
-  text-align: ${(props) => props.align || "left"};
-
+  width: 100%;
   ${(props) =>
     props.isName &&
     `

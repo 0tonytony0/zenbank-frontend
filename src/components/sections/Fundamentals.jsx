@@ -6,11 +6,11 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
-  padding: 40px 20px;
+  padding: 60px 30px;
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.05) 100%
+    ${({ theme }) => theme.colors.accent},
+    ${({ theme }) => theme.colors.background}
   );
   color: ${({ theme }) => theme.colors.text};
   font-family: ${({ theme }) => theme.fonts.primary};
@@ -18,6 +18,8 @@ const Container = styled.div`
   margin: 0 auto;
   gap: 50px;
   margin-bottom: 50px;
+  border: 1px solid white;
+  border-radius: 15px;
 
   @media (max-width: 992px) {
     flex-direction: column;

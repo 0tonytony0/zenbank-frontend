@@ -45,16 +45,15 @@ const SubMenuWrapper = styled.div`
   left: 0;
   background: linear-gradient(
     135deg,
-    rgba(30, 41, 59, 0.95) 0%,
-    rgba(15, 23, 42, 0.95) 50%,
-    rgba(30, 58, 138, 0.9) 100%
+    ${({ theme }) => theme.colors.accent},
+    ${({ theme }) => theme.colors.background}
   );
   backdrop-filter: blur(16px);
   border: 1px solid rgba(59, 130, 246, 0.2);
   border-radius: 20px;
   padding: ${theme.spacing.xl};
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: row;
   gap: ${theme.spacing.xl};
   z-index: 1000;
   opacity: ${({ isOpen }) => (isOpen ? 1 : 0)};
@@ -157,7 +156,7 @@ const SubMenuSection = styled.div`
   position: relative;
 
   h3 {
-    color: ${theme.colors.accent};
+    color: ${theme.colors.text};
     font-size: 1.1rem;
     font-weight: 700;
     margin: 0 0 ${theme.spacing.lg} 0;
@@ -167,19 +166,7 @@ const SubMenuSection = styled.div`
     letter-spacing: 0.5px;
     position: relative;
 
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: -2px;
-      left: 0;
-      width: 40px;
-      height: 2px;
-      background: linear-gradient(
-        90deg,
-        ${theme.colors.accent} 0%,
-        transparent 100%
-      );
-    }
+    
   }
 
   @media (max-width: ${theme.breakpoints.tablet}) {
@@ -203,8 +190,8 @@ const SubMenuItem = styled.div`
   transition: all ${theme.transitions.medium};
   background: linear-gradient(
     135deg,
-    rgba(255, 255, 255, 0.03) 0%,
-    rgba(59, 130, 246, 0.02) 100%
+    ${({ theme }) => theme.colors.accent},
+    ${({ theme }) => theme.colors.border}
   );
   border: 1px solid rgba(255, 255, 255, 0.1);
   position: relative;
@@ -230,12 +217,7 @@ const SubMenuItem = styled.div`
 
   &:hover,
   &:focus {
-    background: linear-gradient(
-      135deg,
-      rgba(59, 130, 246, 0.1) 0%,
-      rgba(245, 158, 11, 0.05) 100%
-    );
-    border-color: rgba(59, 130, 246, 0.3);
+    border-color: rgba(170, 197, 240, 0.3);
     transform: translateY(-4px);
     box-shadow:
       ${theme.shadows.large},
@@ -246,9 +228,6 @@ const SubMenuItem = styled.div`
       opacity: 1;
     }
 
-    .title {
-      color: ${theme.colors.accent};
-    }
   }
 
   .title {
@@ -447,8 +426,7 @@ const Navbar = () => {
           <NavLinkWithSubmenu
             as={Link}
             to="/personals"
-            onMouseEnter={() => setIsSubMenuOpenDesktop(true)}
-            onMouseLeave={() => setIsSubMenuOpenDesktop(false)}
+            onClick={() => setIsSubMenuOpenDesktop(!isSubMenuOpenDesktop)}
             isSubMenuOpen={isSubMenuOpenDesktop}
             aria-expanded={isSubMenuOpenDesktop}
             aria-haspopup="true"
@@ -555,14 +533,13 @@ const NavbarWrapper = styled.header`
   right: 0;
   background: ${({ scrolled }) =>
     scrolled
-      ? `linear-gradient(135deg, ${theme.colors.background}f0 0%, ${theme.colors.primary}e6 100%)`
+      ? `linear-gradient(135deg, ${theme.colors.background}f0 0%, ${theme.colors.secondary}e6 100%)`
       : "rgba(15, 23, 42, 0.8)"};
-  backdrop-filter: blur(12px);
+  backdrop-filter: blur(40px);
   border-bottom: 1px solid
     ${({ scrolled }) =>
       scrolled ? theme.colors.border : "rgba(51, 65, 85, 0.3)"};
-  padding: ${({ scrolled }) => (scrolled ? theme.spacing.sm : theme.spacing.md)}
-    0;
+    padding: 10px;
   z-index: 1000;
   transition: all ${theme.transitions.medium};
 `;
@@ -571,7 +548,7 @@ const NavContainer = styled(Container)`
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  max-width: 1200px;
+  max-width: 100vw;
   padding: 0 ${theme.spacing.lg};
   width: 100% @media (max-width: ${theme.breakpoints.tablet}) {
     padding: 0 ${theme.spacing.md};

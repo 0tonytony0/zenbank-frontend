@@ -47,18 +47,16 @@ const Cards = styled.div`
 
 const Card = styled(motion.div)`
   background: linear-gradient(
-      135deg,
-      rgba(79, 172, 254, 0.2) 0%,
-      rgba(142, 68, 173, 0.2) 100%
+    135deg,
+    ${({ theme }) => theme.colors.accent} ,
+    ${({ theme }) => theme.colors.border}
   );
-  backdrop-filter: blur(14px);
-  -webkit-backdrop-filter: blur(14px);
+  backdrop-filter: blur(30px);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 1rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   color: white;
   padding: ${({ theme }) => theme.spacing.md};
-  border-radius: ${({ theme }) => theme.borderRadius.medium};
+  border-radius: 2rem;
   box-shadow: ${({ theme }) => theme.shadows.medium};
 `;
 
@@ -83,8 +81,8 @@ const CardTitle = styled.h3`
 `;
 
 const CardDescription = styled.p`
-  font-size: ${({ theme }) => theme.fontSizes.small};
-  color: ${({ theme }) => theme.colors.textLight};
+  font-size: ${({ theme }) => theme.fontSizes.regular};
+  color: ${({ theme }) => theme.colors.text};
   margin: 0;
 `;
 

@@ -47,7 +47,7 @@ const TextSection = styled.div`
   }
 `;
 
-const Title = styled.h2`
+const Title = styled.h1`
   font-size: 48px;
   font-weight: bold;
   margin-bottom: 20px;
@@ -56,11 +56,16 @@ const Title = styled.h2`
 const Subtitle = styled.p`
   font-size: 18px;
   margin-bottom: 30px;
-  max-width: 400px;
+  max-width: 500px;
+  color: white;
 `;
 
 const SignInButton = styled.button`
-  background: linear-gradient(135deg, #4facfe 0%, #8e2de2 100%); // Blue → Violet Gradient
+  background: linear-gradient(
+    135deg,
+    ${({ theme }) => theme.colors.accent},
+    ${({ theme }) => theme.colors.background}
+  );
   color: white;
   padding: 12px 24px;
   border: none;
@@ -70,25 +75,14 @@ const SignInButton = styled.button`
   display: flex;
   align-items: center;
   gap: 10px;
-  box-shadow: 0 0 12px rgba(142, 45, 226, 0.6); // Glow effect
+  box-shadow: 0 0 12px rgba(94, 92, 194, 0.6); // Glow effect
   transition: all 0.3s ease;
 
   &:hover {
     transform: scale(1.05);
-    box-shadow: 0 0 18px rgba(142, 45, 226, 0.9);
+    box-shadow: 0 0 18px rgba(7, 11, 253, 0.9);
   }
 `;
-
-
-// const PhoneMockup = styled.div`
-
-// //   height: 600px;
-//   background-image: url(${PhoneMockupImg});
-//     background-size: cover;
-//   background-position: center;
-
-// `;
-
 
 
 // React Component
@@ -105,9 +99,6 @@ return (
                 Sign in <span>→</span>
             </SignInButton>
         </TextSection>
-        {/* <PhoneMockup /> */}
-
-
     </Container>
 );
 };

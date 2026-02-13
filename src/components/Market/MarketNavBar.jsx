@@ -42,10 +42,12 @@ const TabButton = styled.button`
     props.active
       ? "linear-gradient(135deg, #4facfe 0%, #8e2de2 100%)" // Blue → Violet Gradient
       : "transparent"};
-  color: ${(props) => (props.active ? "#fff" : "#9ca3af")};
+  color: ${(props) => (props.active ? "#fff" : "black")};
+  font-size: 15px;
+  font-weight: 500;
   padding: 8px 16px;
   border: none;
-  border-radius: 8px;
+  border-radius: 15px;
   font-weight: 500;
   cursor: pointer;
   white-space: nowrap;
@@ -56,7 +58,7 @@ const TabButton = styled.button`
     background: ${(props) =>
       props.active
         ? "linear-gradient(135deg, #4facfe 0%, #8e2de2 100%)" // same gradient if active
-        : "linear-gradient(135deg, #3b3b3b, #1f1f1f)"}; // subtle dark hover for inactive
+        : "linear-gradient(135deg, #afccee, #3812e0)"}; // subtle dark hover for inactive
     transform: ${(props) => (props.active ? "scale(1.05)" : "none")};
     box-shadow: ${(props) =>
       props.active ? "0 0 12px rgba(142, 45, 226, 0.6)" : "none"};
@@ -69,7 +71,7 @@ const SearchBox = styled.div`
   display: flex;
   align-items: center;
   padding: 6px 10px;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #1b1313f6;
   border-radius: 8px;
   width: 240px;
 

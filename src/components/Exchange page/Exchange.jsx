@@ -1,6 +1,6 @@
 // src/App.js
 import React from "react";
-import WealthGenerationComponent from "../sections/WealthGEneration";
+import WealthGenerationComponent from "../sections/WealthGeneration";
 import IntegrationsComponent from "../sections/IntegrationComponents";
 import FAQ from "../sections/FrequienlyQuestion";
 import Simplify from "../Personal/Simplify";

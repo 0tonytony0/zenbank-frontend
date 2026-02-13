@@ -6,15 +6,14 @@ import { motion, AnimatePresence } from 'framer-motion';
 const Container = styled.section`
   display: flex;
   flex-direction: column;
-  width: 100%;
-  max-width: 1200px;
-  margin: 0 auto;
+  max-width: 90%;
+  margin: 40px auto;
   padding: 3rem 1rem;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
   border-radius: 12px;
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.1);
-  min-height: 100vh;
+  min-height: 60vh;
 
   @media (min-width: 768px) {
     flex-direction: row;
@@ -84,7 +83,7 @@ const QuestionButton = styled.button`
 `;
 
 const QuestionText = styled.h2`
-  font-size: 1.25rem;
+  font-size: 1.2rem;
   font-weight: 500;
   color: ${({ theme }) => theme.colors.text || '#ffffff'};
   margin: 0;

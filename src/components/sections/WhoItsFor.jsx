@@ -45,7 +45,7 @@ const Title = styled.h2`
 `;
 
 const SubTitle = styled.h3`
-  font-size: 20px;
+  font-size: 15px;
   padding-bottom: 10px;
   color: ${({ theme }) => theme.colors.textSecondary};
   margin: 10px 0 0;
@@ -74,21 +74,19 @@ const CardGrid = styled.div`
 const Card = styled.div`
   background: linear-gradient(
     135deg,
-    rgba(79, 172, 254, 0.2) 0%,
-    rgba(142, 68, 173, 0.2) 100%
+    ${({ theme }) => theme.colors.accent},
+    ${({ theme }) => theme.colors.border}
   );
-  backdrop-filter: blur(14px);
+  backdrop-filter: blur(20px);
   -webkit-backdrop-filter: blur(14px);
   border: 1px solid rgba(255, 255, 255, 0.15);
-  border-radius: 1rem;
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
   color: white;
   padding: ${({ theme }) => theme.spacing.md};
-  border-radius: ${({ theme }) => theme.borderRadius.medium};
+  border-radius: ${({ theme }) => theme.borderRadius.large};
   box-shadow: ${({ theme }) => theme.shadows.medium};
-  
+
   padding: 20px;
-  border-radius: 12px;
   flex: 1 1 250px;
   max-width: 300px;
   box-sizing: border-box;
@@ -109,7 +107,7 @@ const Icon = styled.span`
 
 const CardText = styled.p`
   font-size: 16px;
-  color: ${({ theme }) => `${theme.colors.textLight}150`};
+  color: ${({ theme }) => `${theme.colors.text}`};
   margin: 0;
   font-weight: 700;
   text-align: center;
@@ -120,8 +118,8 @@ const WhoItsFor = () => {
   return (
     <Container>
       <TitleWrapper>
-        <Title>Who It's For</Title>
-        <SubTitle>Designed for Everyone</SubTitle>
+        <Title>Who It's For ?</Title>
+        <SubTitle>Designed for Everyone !!</SubTitle>
       </TitleWrapper>
       <CardGrid>
         <Card>

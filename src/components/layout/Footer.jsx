@@ -5,14 +5,16 @@ import ScannerApp from '../../pages/ScannerApp';
 // Styled components for the footer
 const FooterContainer = styled.footer`
   background: linear-gradient(
-      135deg,
-      rgba(79, 172, 254, 0.2) 0%,
-      rgba(142, 68, 173, 0.2) 100%
-    ); /* Slight gradient overlay */
+    135deg,
+    ${({ theme }) => theme.colors.accent},
+    ${({ theme }) => theme.colors.background}
+  );
   backdrop-filter: blur(12px); /* Glassmorphism blur */
   -webkit-backdrop-filter: blur(12px);
   border-radius: 12px;
   border: 1px solid rgba(255, 255, 255, 0.15); /* Subtle border for glass look */
+  width: 98%;
+  margin: 10px auto;
 
   color: #b0b8c4;
   padding: 40px 20px;
@@ -21,8 +23,9 @@ const FooterContainer = styled.footer`
   /* Optional: Neon glow effect on hover */
   transition: all 0.3s ease;
   &:hover {
-    box-shadow: 0 0 20px rgba(79, 172, 254, 0.4),
-                0 0 40px rgba(142, 68, 173, 0.4);
+    box-shadow:
+      0 0 20px rgba(79, 172, 254, 0.4),
+      0 0 40px rgba(142, 68, 173, 0.4);
   }
 `;
 
@@ -30,7 +33,7 @@ const FooterContainer = styled.footer`
 const FooterContent = styled.div`
   display: flex;
   justify-content: space-between;
-  max-width: 1200px;
+  max-width: 95%;
   margin: 0 auto;
   flex-wrap: wrap;
 `;
@@ -41,9 +44,9 @@ const Column = styled.div`
   margin-bottom: 20px;
 `;
 
-const ColumnTitle = styled.h4`
+const ColumnTitle = styled.h3`
   color: #ffffff;
-  font-size: 16px;
+  font-size: 18px;
   margin-bottom: 15px;
   text-transform: uppercase;
 `;
@@ -77,10 +80,10 @@ const IconPlaceholder = styled.div`
 
 const Disclaimer = styled.p`
   color: #b0b8c4;
-  font-size: 12px;
+  font-size: 10px;
   line-height: 1.5;
   max-width: 1200px;
-  margin: 20px auto 0;
+  margin-top: 50px ;
   text-align: left;
 `;
 
@@ -159,6 +162,7 @@ const Footer = () => {
 
       {/* Disclaimer Text */}
       <Disclaimer>
+        *DISCLAIMER* <br /> <br />
         All Platform services, features, nature of digital assets are unique, and when considering digital assets in the context of wealth enhancement, any such references or materials are for general information purposes only and are not intended to be relied upon or considered as legal, tax, or accounting advice. You should consult a qualified professional, as this material is not tailored to your specific circumstances. When referencing digital assets as potential investments, any similarities with traditional concepts of investments should not be interpreted, understood, or intended. Assets under management figure last updated on January 2025.
       </Disclaimer>
     </FooterContainer>

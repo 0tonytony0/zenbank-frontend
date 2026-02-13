@@ -12,8 +12,8 @@ const Section = styled.section`
   text-align: center;
 `;
 
-const Title = styled.h2`
-  color: ${({ theme }) => theme.colors.secondary};
+const Title = styled.h1`
+  color: ${({ theme }) => theme.colors.accent2};
   margin-bottom: ${({ theme }) => theme.spacing.lg};
 `;
 

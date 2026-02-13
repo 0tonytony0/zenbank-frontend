@@ -16,11 +16,11 @@ const Title = styled.h2`
   font-weight: bold;
 `;
 
-const Subtitle = styled.p`
-  font-size: ${({ theme }) => theme.fontSizes.medium};
-  color: ${({ theme }) => `${theme.colors.textLight}150`};
-  margin-top: ${({ theme }) => theme.spacing.sm};
-`;
+// const Subtitle = styled.p`
+//   font-size: ${({ theme }) => theme.fontSizes.medium};
+//   color: ${({ theme }) => `${theme.colors.textLight}150`};
+//   margin-top: ${({ theme }) => theme.spacing.sm};
+// `;
 
 const Grid = styled.div`
   display: grid;
@@ -39,6 +39,8 @@ const Grid = styled.div`
 
 const Card = styled(motion.div)`
   padding: ${({ theme }) => theme.spacing.lg};
+  border: 1px solid white;
+  border-radius: 15px;
 `;
 
 const Emoji = styled.div`
@@ -63,7 +65,7 @@ const Features = () => {
     <Section>
       <Container>
         <Title>Why Choose Zenbank?</Title>
-        <Subtitle>Why Zenbank's is Better</Subtitle>
+        {/* <Subtitle>Why Zenbank's is Better</Subtitle> */}
         <Grid>
           <Card whileInView={{ opacity: 1, y: 0 }} initial={{ opacity: 0, y: 20 }} transition={{ duration: 0.3 }}>
             <Emoji>⚡</Emoji>

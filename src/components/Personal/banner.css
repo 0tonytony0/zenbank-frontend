@@ -1,9 +1,7 @@
  /* --------banner---------- */
 .personalbox {
     width: 100%;
-    max-height: 748px;
-    overflow: hidden;
-    margin: 5px 0;
+    margin-top: 2rem;
 }
 
 .titlBox {
@@ -31,7 +29,7 @@
 .mainImgBox {
     border-radius: 10px 10px 0px 0px;
     padding: 0 200px;
-    background-image: url(/src/assets/ffebca516cac6ee61afd0a054afa5dd4a044da49.png);
+    background-image: url(/src/assets/WealthSolution.jpg);
     z-index: 0;
     background-size: cover;
     background-position: bottom;

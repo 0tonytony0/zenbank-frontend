@@ -10,7 +10,7 @@ import FundingComponent from "./FundingCompmonent";
 import WealthSolutions from "./WealthSolutions";
 import WhoItsFor from "./WhoItsFor";
 import FundamentalsComponent from "./Fundamentals";
-import WealthGenerationComponent from "./WealthGEneration";
+import WealthGenerationComponent from "./WealthGeneration";
 // import IntegrationsComponent from "./IntegrationComponents";
 import FAQ from "./FrequienlyQuestion";
 
@@ -22,7 +22,7 @@ function HomeMenu() {
         // <getToken />
 
     return (
-<>           <Hero />
+<>          <Hero />
             <Paragraph />
             <FundingComponent />
             <Features />
