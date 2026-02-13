@@ -172,13 +172,13 @@ const Navigation = styled.div`
   }
 `;
 
-const ArrowButton = styled.button`
-  background: none;
-  border: none;
-  font-size: 24px;
-  cursor: pointer;
-  color: #fff;
-`;
+// const ArrowButton = styled.button`
+//   background: none;
+//   border: none;
+//   font-size: 24px;
+//   cursor: pointer;
+//   color: #fff;
+// `;
 
 const CardTitle = styled.h3`
   font-family: ${({ theme }) => theme.fonts.heading};
