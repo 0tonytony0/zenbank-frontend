@@ -6,7 +6,7 @@ export const theme = {
     secondary: "#0F3D8C", // Deep blue
     background: "#0A0A0A",
 
-    accent2: "#4cc9f0",
+    accent2: "#0c4758",
     accent: "#121212",
     
     backgroundAlt: "#1A1A1A",
@@ -15,7 +15,7 @@ export const theme = {
     textLight: "#B0B8C1",
     border: "rgba(30, 91, 184, 0.25)",
     
-    success: "#2ECC71",
+    success: "#055828",
     error: "#E74C3C",
     warning: "#F1C40F",
     info: "#3498DB",

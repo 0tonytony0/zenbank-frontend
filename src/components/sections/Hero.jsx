@@ -10,10 +10,10 @@ const Wrapper = styled.section`
   align-items: center;
   padding: 60px 40px;
   background: linear-gradient(
-    135deg,
-    ${theme.colors.accent},
-    ${theme.colors.secondary},
-    ${theme.colors.border}
+    180deg,
+    ${theme.colors.background},
+    ${theme.colors.accent2},
+    ${theme.colors.background}
   );
 
   flex-wrap: wrap;

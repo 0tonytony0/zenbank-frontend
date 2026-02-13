@@ -16,6 +16,7 @@ const Container = styled.div`
   flex-direction: column;
   justify-content: start;
   padding: 40px 20px;
+  margin-top: 3rem;
 
   @media (min-width: 768px) {
     padding: 80px;
@@ -26,9 +27,10 @@ const Overlay = styled.div`
   position: absolute;
   inset: 0;
   background: linear-gradient(
-    135deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(255, 255, 255, 0.05) 100%
+    180deg,
+    #0a0a0ac4 35%,
+    rgba(5, 22, 53, 0.51),
+    #0a0a0ac4 100%
   );
 `;
 
@@ -37,10 +39,10 @@ const Content = styled.div`
   z-index: 1;
   max-width: 1200px;
   width: 100%;
-  margin: 50px auto;
   display: flex;
   flex-direction: column;
   gap: 40px;
+  justify-content: center;
 
   @media (min-width: 768px) {
     gap: 60px;
@@ -49,8 +51,8 @@ const Content = styled.div`
 
 const Title = styled.h1`
   font-family: ${({ theme }) => theme.fonts.heading};
-  font-size: 4rem;
-  max-width: 100%;
+  font-size: 3rem;
+  width: 90vw; 
 
   background: linear-gradient(
     135deg,
@@ -59,6 +61,7 @@ const Title = styled.h1`
   );
   padding: 30px;
   border-radius: 20px;
+  border: 1px solid white;
 
   position: relative;
 
@@ -90,10 +93,11 @@ const CardLeft = styled.div`
 
   background: linear-gradient(
     135deg,
-    ${({ theme }) => theme.colors.primary},
-    ${({ theme }) => theme.colors.secondary}
+    ${({ theme }) => theme.colors.secondary},
+    ${({ theme }) => theme.colors.accent2}
   );
 
+  border: 1px solid white;
   box-shadow:
     0 30px 60px rgba(0, 0, 0, 0.6),
     0 0 40px rgba(30, 91, 184, 0.4);
@@ -105,10 +109,11 @@ const CardLeft = styled.div`
   transition: ${({ theme }) => theme.transitions.medium};
 
   &:hover {
-    transform: translateY(-10px) scale(1.02);
+    transform: translateY(-8px);
+    border: 1px solid ${({ theme }) => theme.colors.primary};
     box-shadow:
-      0 40px 80px rgba(0, 0, 0, 0.8),
-      0 0 60px rgba(30, 91, 184, 0.6);
+      0 35px 70px rgba(0, 0, 0, 0.7),
+      0 0 40px rgba(30, 91, 184, 0.5);
   }
 
   &::after {
@@ -130,7 +135,7 @@ const CardRight = styled.div`
   min-height: 320px;
 
   background: ${({ theme }) => theme.colors.backgroundAlt};
-  border: 1px solid ${({ theme }) => theme.colors.border};
+  border: 1px solid white;
 
   box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
 

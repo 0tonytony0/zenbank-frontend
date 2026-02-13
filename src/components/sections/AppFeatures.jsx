@@ -7,8 +7,8 @@ const Wrapper = styled.section`
   padding: 3rem 1rem;
   width: 100%;
   box-sizing: border-box;
+  margin-top: 3rem;
   background: ${({ theme }) => theme.colors.background || "#f9fafb"};
-  min-height: 100vh; /* Ensure full viewport height for better presentation */
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -5,10 +5,15 @@ import { FiUserPlus, FiCreditCard, FiSend } from 'react-icons/fi';
 
 const Section = styled.section`
   padding: 60px 20px;
-  // background-color: #fff;
-  background: #0D0D2B;
+  background: linear-gradient(
+    180deg,
+    #0a0a0ac4 35%,
+    rgba(5, 22, 53, 0.51),
+    #0a0a0ac4 100%
+  );
   text-align: center;
   color: white;
+  margin-top: 3rem;
 `;
 
 const Heading = styled.h2`

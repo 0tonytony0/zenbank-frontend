@@ -3,10 +3,17 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import Container from '../ui/Container';
+import { theme } from '../../styles/theme';
 
 const Section = styled.section`
   padding: ${({ theme }) => theme.spacing.xxl} 0;
-  background-color: ${({ theme }) => theme.colors.background};
+  background: linear-gradient(
+      180deg,
+      ${theme.colors.background},
+      ${theme.colors.border},
+      ${theme.colors.background}
+    );
+  
   text-align: center;
 `;
 
@@ -40,7 +47,8 @@ const Grid = styled.div`
 const Card = styled(motion.div)`
   padding: ${({ theme }) => theme.spacing.lg};
   border: 1px solid white;
-  border-radius: 15px;
+  border-radius: 20px;
+  background: black;
 `;
 
 const Emoji = styled.div`

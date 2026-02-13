@@ -531,15 +531,9 @@ const NavbarWrapper = styled.header`
   top: 0;
   left: 0;
   right: 0;
-  background: ${({ scrolled }) =>
-    scrolled
-      ? `linear-gradient(135deg, ${theme.colors.background}f0 0%, ${theme.colors.secondary}e6 100%)`
-      : "rgba(15, 23, 42, 0.8)"};
-  backdrop-filter: blur(40px);
-  border-bottom: 1px solid
-    ${({ scrolled }) =>
-      scrolled ? theme.colors.border : "rgba(51, 65, 85, 0.3)"};
-    padding: 10px;
+  background: linear-gradient(135deg, ${theme.colors.background}, ${theme.colors.border}) ;
+  backdrop-filter: blur(60px);
+  padding: 10px;
   z-index: 1000;
   transition: all ${theme.transitions.medium};
 `;

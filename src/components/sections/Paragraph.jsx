@@ -27,6 +27,7 @@ const DataBox = styled.div`
     ${({ theme }) => theme.colors.accent},
     ${({ theme }) => theme.colors.border}
   );
+  border: 1px solid white;
   border-radius: 15px;
   padding: 24px 12px;
   font-size: 1.1rem;
@@ -49,9 +50,9 @@ const Label = styled.span`
 `;
 
 const Highlight = styled.span`
-  color: ${({ theme }) => theme.colors.accent2};
-  font-weight: 700;
-  font-size: 1.2rem;
+  color: ${({ theme }) => theme.colors.text};
+  font-weight: 750;
+  font-size: 1.25rem;
   margin-top: 4px;
 `;
 

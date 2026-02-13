@@ -94,7 +94,7 @@ const FundingComponent = () => {
         <Header>
           <HeaderTop>
             <QuoteIcon>"</QuoteIcon>
-            <Title>Fund your account effortlessly.</Title>
+            <Title>Fund your account effortlessly</Title>
             <QuoteIcon>"</QuoteIcon>
           </HeaderTop>
           <Subtitle>

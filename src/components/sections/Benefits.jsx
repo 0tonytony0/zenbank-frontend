@@ -13,8 +13,9 @@ const Section = styled.section`
 `;
 
 const Title = styled.h1`
-  color: ${({ theme }) => theme.colors.accent2};
+  color: ${({ theme }) => theme.colors.primary};
   margin-bottom: ${({ theme }) => theme.spacing.lg};
+  font-size: 3rem;
 `;
 
 const Text = styled.p`
