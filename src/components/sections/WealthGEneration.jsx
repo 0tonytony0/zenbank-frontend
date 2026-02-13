@@ -1,7 +1,6 @@
-import React from 'react';
-import styled from 'styled-components'; 
-import WealthGenImg from '../../assets/WealthGenImg.jpg'; 
-
+import React from "react";
+import styled from "styled-components";
+import WealthGenImg from "../../assets/WealthGenImg.jpg";
 
 // Styled Components
 const Container = styled.div`
@@ -62,11 +61,7 @@ const Subtitle = styled.p`
 `;
 
 const SignInButton = styled.button`
-  background: linear-gradient(
-    135deg,
-    #4cc9f0,
-    #121212 
-  );
+  background: linear-gradient(135deg, #4cc9f0, #121212);
   color: white;
   padding: 12px 24px;
   border: none;
@@ -85,23 +80,23 @@ const SignInButton = styled.button`
   }
 `;
 
-
 // React Component
 const WealthGenerationComponent = () => {
-return (
+  return (
     <Container>
-        <Overlay />
-        <TextSection>
-            <Title>Driving the next generation of wealth.</Title>
-            <Subtitle>
-                Zenbank is built for pioneers ready to leverage blockchain technology for wealth generation. Create your account today and get started.
-            </Subtitle>
-            <SignInButton>
-                Sign in <span>→</span>
-            </SignInButton>
-        </TextSection>
+      <Overlay />
+      <TextSection>
+        <Title>Driving the next generation of wealth.</Title>
+        <Subtitle>
+          Zenbank is built for pioneers ready to leverage blockchain technology
+          for wealth generation. Create your account today and get started.
+        </Subtitle>
+        <SignInButton>
+          Sign in <span>→</span>
+        </SignInButton>
+      </TextSection>
     </Container>
-);
+  );
 };
 
 export default WealthGenerationComponent;
