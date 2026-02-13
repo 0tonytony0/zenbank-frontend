@@ -1,6 +1,7 @@
 import React from 'react';
 import styled from 'styled-components'; 
-import WealthGenImg from '../../assets/WealthGenImg.jpg'; // Replace with actual path to your wealth generation image
+import WealthGenImg from '../../assets/WealthGenImg.jpg'; 
+
 
 // Styled Components
 const Container = styled.div`
@@ -63,8 +64,8 @@ const Subtitle = styled.p`
 const SignInButton = styled.button`
   background: linear-gradient(
     135deg,
-    ${({ theme }) => theme.colors.accent},
-    ${({ theme }) => theme.colors.background}
+    #4cc9f0,
+    #121212 
   );
   color: white;
   padding: 12px 24px;

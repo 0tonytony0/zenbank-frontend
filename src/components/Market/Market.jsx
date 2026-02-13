@@ -1,8 +1,6 @@
 // src/App.js
 import React from "react";
 import Banner from "../Personal/Banner";
-import WealthGenerationComponent from "../sections/WealthGeneration";
-import FundamentalsComponent from "../sections/Fundamentals";
 import styled from 'styled-components';
 import Cryptomarket from "./Cryptomarket";
 
@@ -18,10 +16,7 @@ function Market() {
       <Banner />
       <Cryptomarket />
       <Table />
-      {/* <WealthGenerationComponent />
-      <FundamentalsComponent /> */}
-
-</>
+    </>
   );
 }
 
